@@ -11980,4 +11980,20 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+h4, .h4 {
+  font-family: "akaya kanadaka", serif;
+  font-size: 30px;
+}
+
+p {
+  font-family: "delius swash caps", sans-serif;
+  font-size: 14px;
+}
+
+h1, .h1 {
+  font-family: "delius swash caps", sans-serif;
+  font-size: 36px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
