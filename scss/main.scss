@@ -1,21 +1,62 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
-html{
+html, body{
     position: relative;
     min-height: 100%;
-}
-main{
-    margin-bottom: 180px;
+    margin: 0;
 }
 
-footer.footer{
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
+// Bloquer le footer en bas de page, meme si la page est vide
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 10px;
+}
+
+
+// bloquer la navbar en haut de la page et ajouter un effet d'ombre
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+border-bottom: solid #575757 2px;
+box-shadow: 0px 5px 5px #575757;
+}
+
+
+// mise en page de la page 404
+.erreur {
+    background-image: url(/images/image_zoo.jpg);
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+//titres h1
+h1 {
+    font-family: $font-family-sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+// titres h4
 h4 {
     font-family: $font-family-serif;
     font-size: 30px;
@@ -25,17 +66,46 @@ p {
     font-family: $font-family-sans-serif;
 }
 
-h1 {
-    font-family: $font-family-sans-serif;
-    font-size: 36px;
-    text-align: center;
+//mise ne page du carrousel
+#carousel {
+    position: relative;
 }
 
-.titre {
+.py-3 {
+    padding-top: 5.4rem !important;
+    padding-bottom: 1rem !important;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 960px;
+    }
+}
+
+/*.presentation {
+    padding:150px; 
+    line-height:32px; 
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*.titre {
     margin-top: 150px;
 }
 
-.hero-scene{
+/*.hero-scene{
     position: relative;
     &::before{
         content:"";
@@ -51,11 +121,11 @@ h1 {
              
     }
 
-    *{ // positionner les éléments devant le before
+    /* *{ // positionner les éléments devant le before
         position: relative;
     }
 
-    .hero-scene-content {
+    /*.hero-scene-content {
         height: 700px;
         display: flex;
         flex-direction: column;
@@ -69,8 +139,45 @@ h1 {
     }
 }
 
-.images {
+/*.images {
     max-width: 50%; 
     height: auto; 
     object-fit: cover;
 }
+
+
+/*@media (max-width: 767px) {
+    #carousel img {
+        max-height: 200px;
+        max-width: 500px;
+    }
+}
+
+/*.w-100 {
+    width: 100% !important;
+}
+
+/*.d-block {
+    display: block !important;
+}
+
+/*img, svg {
+    vertical-align: middle;
+}
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+}*/
+
+
+
+/*main {
+    margin-bottom: 180px;
+}
+
+footer .footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
