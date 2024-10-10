@@ -8,21 +8,6 @@ html, body{
 }
 
 
-// Bloquer le footer en bas de page, meme si la page est vide
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    padding: 10px;
-}
-
 
 // bloquer la navbar en haut de la page et ajouter un effet d'ombre
 .fixed-top {
@@ -49,6 +34,16 @@ box-shadow: 0px 5px 5px #575757;
     align-items: center;
 }
 
+.page {
+    text-align: center;
+}
+
+.retour {
+    background-color: rgb(175, 247, 142);
+     border-radius: 10px;
+}
+
+
 //titres h1
 h1 {
     font-family: $font-family-sans-serif;
@@ -66,7 +61,7 @@ p {
     font-family: $font-family-sans-serif;
 }
 
-//mise ne page du carrousel
+//mise ne page du carrousel bloc 1
 #carousel {
     position: relative;
 }
@@ -93,6 +88,71 @@ p {
         max-width: 960px;
     }
 }
+
+#naissances, #restau, #train {
+background-color: green;
+border-radius: 20px;
+}
+
+// mise en place de la présentation du zoo bloc 2
+
+#welcome {
+    background-color: #0b4107;
+}
+
+.gazelle {
+    opacity: 90%; 
+    height: 80%
+}
+
+.pt-3 {
+    margin-left: 40px;
+}
+
+// mise ne place de la partie "explorarion des habitats bloc 3
+
+.habitats {
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+// mise ne place de la presentation d'un annimal phare bloc 4
+
+
+// mise en place des services blocs 5
+
+
+// mise en place des avis bloc 6
+
+
+
+// mise en place du footer
+
+#map {
+    border:0;
+}
+
+// Bloquer le footer en bas de page, meme si la page est vide
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 10px;
+}
+
+
 
 /*.presentation {
     padding:150px; 

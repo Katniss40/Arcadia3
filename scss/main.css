@@ -11972,20 +11972,6 @@ html, body {
   margin: 0;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-footer {
-  padding: 10px;
-}
-
 .fixed-top {
   position: fixed;
   top: 0;
@@ -12008,6 +11994,15 @@ footer {
   align-items: center;
 }
 
+.page {
+  text-align: center;
+}
+
+.retour {
+  background-color: rgb(175, 247, 142);
+  border-radius: 10px;
+}
+
 h1, .h1 {
   font-family: "delius swash caps", sans-serif;
   font-size: 36px;
@@ -12028,7 +12023,7 @@ p {
 }
 
 .py-3 {
-  padding-top: 5.5rem !important;
+  padding-top: 5.4rem !important;
   padding-bottom: 1rem !important;
 }
 
@@ -12047,6 +12042,50 @@ p {
     max-width: 960px;
   }
 }
+#naissances, #restau, #train {
+  background-color: green;
+  border-radius: 20px;
+}
+
+#welcome {
+  background-color: #0b4107;
+}
+
+.gazelle {
+  opacity: 90%;
+  height: 80%;
+}
+
+.pt-3 {
+  margin-left: 40px;
+}
+
+.habitats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#map {
+  border: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 10px;
+}
+
 /*.presentation {
     padding:150px; 
     line-height:32px; 

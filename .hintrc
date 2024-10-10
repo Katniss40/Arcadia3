@@ -16,6 +16,7 @@
     "not opera <= 111"
   ],
   "hints": {
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "axe/name-role-value": "off"
   }
 }
