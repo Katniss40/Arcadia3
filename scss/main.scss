@@ -53,15 +53,36 @@ body {
     }
 }
 
+.connexion::after {
+  content: " Only Staff! ";
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  transform: translateX(-50%);
+  padding: 5px;
+  font-size: 14px;
+  color: #4CAF50;
+  background-color: #fff;
+  border: 1px solid #4CAF50;
+  border-radius: 60px 0px 60px 0px;
+	-webkit-border-radius: 60px 0px 60px 0px;
+	-moz-border-radius: 60px 0px 60px 0px;
+	border: 5px solid #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
 
+.connexion:hover::after {
+  opacity: 1;
+}
 
 // Le footer
 
 .footer-clean {
-    padding:20px 0;
+    padding:14px 20px;
     background-color: #0b4107;
     color:white;
-    bottom: 0;
   }
   
   .footer-clean h3 {
@@ -90,7 +111,7 @@ body {
   }
   
   .footer-clean .item.social {
-    text-align:right;
+    text-align:center;
   }
   
   @media (max-width:767px) {
@@ -122,7 +143,7 @@ body {
   }
   
   .footer-clean .item.social > a:hover {
-    opacity:0.9;
+    opacity:0.5;
   }
   
   @media (max-width:991px) {
@@ -206,8 +227,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 
-/*Page Home
-Mise ne page du carrousel bloc 1*/
+/*Page Home Mise ne page du carrousel bloc 1*/
 #carousel {
   position: relative;
   
@@ -341,6 +361,18 @@ p {
 }
 
 /* La promo bloc 4 */
+#facts {
+  background-color: #0b4107;
+  margin-left: 5.5rem;  
+  margin-right: 5.5rem
+
+}
+
+.pt-3 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .row-promo {
   text-align: center;
   display: flex;
@@ -353,6 +385,7 @@ p {
 }
 
 .row-girafe { 
+  background-color: #0b4107;
   text-align: center;
   display: flex;
   margin: 30px 120px 30px 120px; 
@@ -361,19 +394,24 @@ p {
 }
 
 #top-animal {
-  margin: 0px 0px;
+  margin: -45px -65px;
   padding: 0px 0px;
 }
 
 .img-top-animal {
   max-width: 100%;
-  align-items: center;
-  
+  align-items: center;  
   height: auto;
-  width: 330px;
-  
+  width: 440px;  
 }
 
+#girafe {
+  background-color: #4CAF50;
+  border-radius: 10px;
+  margin-left: -5rem;
+  margin-right: -4rem;
+
+}
 /* mise en place des services blocs 5*/
 /*.services-img {
   width: 150px;
@@ -399,11 +437,6 @@ p {
       flex: 0 0 auto;
       width: 33.33333333%;
   }
-}
-
-.py-3 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
 }
 
 img, svg {

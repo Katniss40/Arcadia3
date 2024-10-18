@@ -14,3 +14,4 @@ $('#collapseMarais2').collapse({
 $('#collapseMarais3').collapse({
   toggle: false
 })
+
