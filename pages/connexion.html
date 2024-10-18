@@ -1,1 +1,33 @@
-<p  class="py-3">connexion</p>
+<div class="hero-scene text-center">
+  <div class="hero-scene-content">
+    <h1> Bienvenue au Zoo Arcadia</h1>
+    <h4>Connexion réservée exclusivement au personnel du zoo</h4>
+    <a href="/" class="btn btn-primary">Quitter</a>
+  </div>
+</div>
+<div class="container-connection">
+<form>
+  <div class="row-cols-2 mb-lg-3">
+    <img class="avatar" src="/images/avatarF.jpg" alt="Femme">
+    <img class="avatar" src="/images/avatarH.jpg" alt="homme">
+  </div>
+  
+    <div class="mb-3">
+      <label for="InputEmail" class="form-label">Adresse M@il</label>
+      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="mon.nom@email.com">
+      <div class="invalid-feedback">
+        Le mail et le mot de passe ne corresponde pas aux données enregistrées
+      </div>
+      <div id="emailHelp" class="form-text">Entrez l'adresse mail communiquer à votre direction.</div>
+    </div>
+    <div class="mb-3">
+      <label for="InputPassword" class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" id="InputPassword" placeholder="**********">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="Check1">
+      <label class="form-check-label" for="Check1">Se souvenir de moi</label>
+    </div>
+    <button type="button" class="btn btn-primary" id="btnSingin">Connexion</button>
+  </form>  
+</div>
