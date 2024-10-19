@@ -12256,8 +12256,14 @@ p {
     width: 25%;
   }
 }
-.bg-arc-mint-green {
+.bg-arc-mint-green-light {
   background-color: rgba(209, 248, 206, 0.7333333333);
+  margin-right: 5.5rem;
+  margin-left: 5.5rem;
+}
+
+.bg-arc-mint-green {
+  background-color: #0b4107;
   margin-right: 5.5rem;
   margin-left: 5.5rem;
 }
@@ -12289,7 +12295,7 @@ p {
 
 /* La promo bloc 4 */
 #facts {
-  background-color: #0b4107;
+  background-color: rgba(209, 248, 206, 0.7333333333);
   margin-left: 5.5rem;
   margin-right: 5.5rem;
 }
@@ -12308,7 +12314,6 @@ p {
 }
 
 .row-girafe {
-  background-color: #0b4107;
   text-align: center;
   display: flex;
   margin: 30px 120px 30px 120px;
@@ -12329,13 +12334,13 @@ p {
 }
 
 #girafe {
-  background-color: #4CAF50;
+  background-color: #0b4107;
   border-radius: 10px;
   margin-left: -5rem;
   margin-right: -4rem;
 }
 
-/* mise en place des services blocs 5*/
+/* Les services blocs 5*/
 /*.services-img {
   width: 150px;
   height: 150px;
@@ -12371,8 +12376,53 @@ img, svg {
   transition: transform 0.5s ease;
 }
 
+.btn-services {
+  margin-bottom: 15px;
+}
+
+.fw-normal {
+  margin-bottom: -20px;
+}
+
 /* Page Connexion*/
 .avatar {
   width: 150px;
   height: 150px;
+}
+
+/* Page de la jungle et les pages des animaux*/
+.jaguard {
+  height: auto;
+  width: 300px;
+}
+
+/*Page du marais et les pages des animaux*/
+.flamand {
+  height: auto;
+  width: 300px;
+}
+
+#animal_intro {
+  background-color: #0b4107;
+}
+
+/*Page de la savane et les pages des animaux*/
+.lion {
+  margin-top: -3px;
+  height: auto;
+  width: 230px;
+}
+
+/* Page services */
+#service {
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 420px;
+  margin-top: 15px;
+}
+
+.services {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
