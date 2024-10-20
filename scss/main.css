@@ -12078,6 +12078,9 @@ body {
   .footer-clean .item.social {
     text-align: center;
   }
+  .footer-clean .item.social .d-md-block {
+    display: block !important;
+  }
 }
 .footer-clean .item.social > a {
   font-size: 24px;
@@ -12229,12 +12232,18 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 /*Pages Habitats et bloc 3 de la Home page*/
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .my-md-4 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
+      margin-top: 1.5rem !important;
+      margin-bottom: 1.5rem !important;
   }
+}*/
+.welcom-gazelle {
+  text-align: center;
+  margin-left: -50px;
+  margin-right: -20px;
 }
+
 /*.rect-upper-effect {
   -webkit-clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
@@ -12253,7 +12262,12 @@ p {
 @media (min-width: 768px) {
   .col-md-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 26%;
+  }
+}
+@media (min-width: 768px) {
+  .offset-md-1 {
+    margin-left: 6.333333%;
   }
 }
 .bg-arc-mint-green-light {
@@ -12322,15 +12336,17 @@ p {
 }
 
 #top-animal {
-  margin: -45px -65px;
+  margin: -65px 86px 0 -141px;
   padding: 0px 0px;
 }
 
-.img-top-animal {
+.img-top-animal-girafe {
   max-width: 100%;
   align-items: center;
   height: auto;
-  width: 440px;
+  width: 470px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #girafe {
@@ -12404,6 +12420,11 @@ img, svg {
 
 #animal_intro {
   background-color: #0b4107;
+  margin: 10px -300px 10px -300px;
+}
+
+.img-habitat {
+  margin: 0px 10px 10px -50px;
 }
 
 /*Page de la savane et les pages des animaux*/
