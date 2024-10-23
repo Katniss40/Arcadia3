@@ -413,36 +413,34 @@ p {
 }
 
 .row-promo {
-  text-align: center;
+  //text-align: center;
   display: flex;
-  margin: 0;  
-  margin-left: 5.5rem;  
-  margin-right: 5.5rem
+  //margin: 0;  
+  //margin-left: 5.5rem;  
+  //margin-right: 5.5rem
   ;
   //width: 1600px;
   //height: 250px;
 }
 
 .row-girafe {   
-  text-align: center;
   display: flex;
-  margin: 30px 120px 30px 120px; 
-  width: 1500px;
-  height: 250px;
-}
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+ }
 
-#top-animal {
-  margin: -65px 86px 0 -141px;
-  padding: 0px 0px;
-}
 
 .img-top-animal-girafe {
-  max-width: 100%;
+  display: flex;
+  /*max-width: 100%;
   align-items: center;  
   height: auto;
   width: 470px;  
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 15px;*/
 }
 
 #girafe {

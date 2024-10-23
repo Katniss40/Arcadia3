@@ -12336,33 +12336,26 @@ p {
 }
 
 .row-promo {
-  text-align: center;
   display: flex;
-  margin: 0;
-  margin-left: 5.5rem;
-  margin-right: 5.5rem;
 }
 
 .row-girafe {
-  text-align: center;
   display: flex;
-  margin: 30px 120px 30px 120px;
-  width: 1500px;
-  height: 250px;
-}
-
-#top-animal {
-  margin: -65px 86px 0 -141px;
-  padding: 0px 0px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 .img-top-animal-girafe {
-  max-width: 100%;
-  align-items: center;
+  display: flex;
+  /*max-width: 100%;
+  align-items: center;  
   height: auto;
-  width: 470px;
+  width: 470px;  
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 15px;*/
 }
 
 #girafe {
