@@ -33,6 +33,7 @@ export const allRoutes = [
     new Route("/rhinoceros", "rhinoceros", "/pages/savane/rhinoceros.html"),
     new Route("/zebres", "zebres", "/pages/savane/zebres.html"),
     new Route("/habitats", "habitats", "/pages/habitats.html"),
+    new Route("/contact", "contact", "/pages/contact.html"),
     new Route("/connexion", "connexion", "/pages/connexion.html", "/js/auth/singin.js"),
 
 ];

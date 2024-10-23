@@ -12220,7 +12220,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   }
 }
 /*Présentation du zoo   bloc 2et page Habitats*/
-#welcome {
+/*#welcome {
   background-color: #0b4107;
   display: block;
   margin-left: 90px;
@@ -12228,9 +12228,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 100%;
   height: auto;
   padding-left: 10rem; /* ajuster selon tes besoins */
-  padding-right: 10rem;
-}
-
+/*padding-right: 10rem;   
+}*/
 /*Pages Habitats et bloc 3 de la Home page*/
 /*@media (min-width: 768px) {
   .my-md-4 {
@@ -12238,10 +12237,27 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
       margin-bottom: 1.5rem !important;
   }
 }*/
-.welcom-gazelle {
+/*.welcom-gazelle {
   text-align: center;
   margin-left: -50px;
   margin-right: -20px;
+}*/
+.gazelle1 {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+}
+
+.gazelle-text {
+  margin-top: 1rem;
+}
+
+.gazelle-titre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 /*.rect-upper-effect {
@@ -12446,4 +12462,9 @@ img, svg {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
+}
+
+.contact {
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
 }/*# sourceMappingURL=main.css.map */
