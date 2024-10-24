@@ -5,29 +5,48 @@
     <a href="/" class="btn btn-primary">Quitter</a>
   </div>
 </div>
-<div class="container-connection">
-<form>
-  <div class="row-cols-2 mb-lg-3">
-    <img class="avatar" src="/images/avatarF.jpg" alt="Femme">
-    <img class="avatar" src="/images/avatarH.jpg" alt="homme">
-  </div>
-  
-    <div class="mb-3">
-      <label for="InputEmail" class="form-label">Adresse M@il</label>
-      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="mon.nom@email.com">
-      <div class="invalid-feedback">
-        Le mail et le mot de passe ne corresponde pas aux données enregistrées
+
+<div class="container my-md-4 py-3">
+  <section id="contact_top">
+          
+      <div class="row">
+          <div class="col rect-upper-effect"></div>
       </div>
-      <div id="emailHelp" class="form-text">Entrez l'adresse mail communiquer à votre direction.</div>
+      
+          
     </div>
-    <div class="mb-3">
-      <label for="InputPassword" class="form-label">Mot de passe</label>
-      <input type="password" class="form-control" id="InputPassword" placeholder="**********">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="Check1">
-      <label class="form-check-label" for="Check1">Se souvenir de moi</label>
-    </div>
-    <button type="button" class="btn btn-primary" id="btnSingin">Connexion</button>
-  </form>  
+      <div class="row bg-arc-dark">
+          <div class="col rect-lower-effect"></div>
+      </div>
+
+
+  </section>
+
+
+  <section id="yourMessage">
+      <div class="row bg-arc-mint-green py-3">
+          <h2 class="text-light"><i class="bi bi-pencil-square text-light"></i> Connexion réservée Staff</h2>
+
+          <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php">
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label text-light">Adresse M@il</label>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="mon.nom@email.com">
+                <div class="invalid-feedback">
+                  Le mail et le mot de passe ne corresponde pas aux données enregistrées
+                </div>
+                <div id="emailHelp" class="form-text text-light">Entrez l'adresse mail communiquer à votre direction.</div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword" class="form-label text-light">Mot de passe</label>
+                <input type="password" class="form-control" id="InputPassword" placeholder="**********">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check1">
+                <label class="form-check-label souvenir text-light" for="Check1">Se souvenir de moi</label>
+              </div>
+              <button type="button" class="btn btn-primary" id="btnSingin">Connexion</button>
+
+          </form>
+      </div>
+  </section>
 </div>

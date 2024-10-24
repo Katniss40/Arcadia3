@@ -26,26 +26,26 @@
 
     <section id="yourMessage">
         <div class="row bg-arc-mint-green py-3">
-            <h2><i class="bi bi-pencil-square"></i> Votre message</h2>
+            <h2 class="text-light"><i class="bi bi-pencil-square text-light"></i> Votre message</h2>
 
             <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php">
                 <div class="mb-3">
                     <input type="hidden" name="csrf_token" value="6f9b48310e9b0d6d73d056f74a1dfb975e7b6bbb10b3aa09fa1deb9a0dda46be">
-                    <label for="contactTitle" class="form-label">Titre du message :</label>
-                    <input required type="text" class="form-control" id="contactTitle" name="contactTitle" placeholder="ex. Réclamation">
+                    <label for="contactTitle" class="form-label text-light">Titre du message :</label>
+                    <input required type="text" class="form-control " id="contactTitle" name="contactTitle" placeholder="ex. Réclamation">
                 </div>
                 <div class="mb-3">
-                    <label for="contactMessage" class="form-label">Votre message :</label>
-                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="5">Tapez votre message ici.</textarea>
+                    <label for="contactMessage" class="form-label text-light">Votre message :</label>
+                    <textarea class="form-control text-black" id="contactMessage" name="contactMessage" rows="5">Tapez votre message ici.</textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="contactEmail" class="form-label">Votre adresse e-mail :</label>
-                    <input required type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="ex : moi@email.com">
+                    <label for="contactEmail" class="form-label text-light">Votre adresse e-mail :</label>
+                    <input required type="email" class="form-control " id="contactEmail" name="contactEmail" placeholder="ex : moi@email.com">
                 </div>
                 
-                <input class="btn btn-arc-dark" name="ContactForm" type="submit" value="Envoyer ce message"></input>
+                <input class="btn btn-arc-dark text-light" name="ContactForm" type="submit" value="Envoyer ce message"></input>
 
             </form>
         </div>
-
+    </section>
 </div>

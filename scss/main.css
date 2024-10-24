@@ -12438,7 +12438,7 @@ img, svg {
 
 /*Page de la savane et les pages des animaux*/
 .lion {
-  margin-top: -3px;
+  margin-top: -16px;
   height: auto;
   width: 230px;
 }
@@ -12458,6 +12458,16 @@ img, svg {
 }
 
 .contact {
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+}
+
+.souvenir {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.habitats-presentation {
   margin-left: 5.5rem;
   margin-right: 5.5rem;
 }/*# sourceMappingURL=main.css.map */
