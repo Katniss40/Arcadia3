@@ -12194,6 +12194,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;
 }
 
+.pt-3 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
@@ -12325,14 +12330,9 @@ p {
 
 /* La promo bloc 4 */
 #facts {
-  background-color: rgba(209, 248, 206, 0.7333333333);
+  background-color: #0b4107;
   margin-left: 5.5rem;
   margin-right: 5.5rem;
-}
-
-.pt-3 {
-  margin-left: 35px;
-  margin-right: 35px;
 }
 
 .row-promo {
@@ -12359,7 +12359,8 @@ p {
 }
 
 #girafe {
-  background-color: #0b4107;
+  font-size: 18px;
+  background-color: rgba(209, 248, 206, 0.7333333333);
   border-radius: 10px;
   margin-left: -5rem;
   margin-right: -4rem;
@@ -12375,14 +12376,6 @@ p {
     display: flex !important;
   }
 }
-.text-center {
-  text-align: center !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
 @media (min-width: 992px) {
   .col-lg-4 {
     flex: 0 0 auto;
@@ -12399,6 +12392,7 @@ img, svg {
   box-shadow: 2px 2px #044d29;
   border-radius: 50%;
   transition: transform 0.5s ease;
+  margin-top: 20px;
 }
 
 .btn-services {
@@ -12415,16 +12409,9 @@ img, svg {
   height: 150px;
 }
 
-/* Page de la jungle et les pages des animaux*/
-.jaguard {
-  height: auto;
-  width: 300px;
-}
-
-/*Page du marais et les pages des animaux*/
-.flamand {
-  height: auto;
-  width: 300px;
+/* Page des habitats*/
+.fw-normal-habitats {
+  margin-bottom: 1rem;
 }
 
 #animal_intro {
@@ -12432,15 +12419,28 @@ img, svg {
   margin: 10px -300px 10px -300px;
 }
 
-.img-habitat {
-  margin: 0px 10px 10px -50px;
+.marais3 {
+  opacity: 0.2;
 }
 
-/*Page de la savane et les pages des animaux*/
-.lion {
-  margin-top: -16px;
-  height: auto;
-  width: 230px;
+/*.img-habitat {
+  margin: 0px 10px 10px -50px;
+
+}*/
+.img-habitat {
+  max-height: 240px;
+  box-shadow: 2px 2px #044d29;
+  border-radius: 5%;
+}
+
+#habitat_Part {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.habitats {
+  color: #044d29;
+  font-size: 45px;
 }
 
 /* Page services */
@@ -12470,4 +12470,20 @@ img, svg {
 .habitats-presentation {
   margin-left: 5.5rem;
   margin-right: 5.5rem;
+}
+
+.habitat-marais {
+  background-color: rgba(209, 248, 206, 0.7333333333);
+  margin-right: -23.3rem;
+  margin-left: -23.3rem;
+}
+
+.img-habitat-marais {
+  margin: 0px 10px 10px -50px;
+  max-width: 65%;
+}
+
+.contact-lion {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }/*# sourceMappingURL=main.css.map */

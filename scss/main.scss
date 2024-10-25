@@ -258,6 +258,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   
 }
 
+.pt-3 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
       max-width: 1320px;
@@ -289,7 +294,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 /*Présentation du zoo   bloc 2et page Habitats*/
-/*#welcome {
+#welcome {
   background-color: #0b4107;
   display: block;
   margin-left: 90px;
@@ -297,8 +302,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 100%;
   height: auto;
   padding-left: 10rem; /* ajuster selon tes besoins */
-  /*padding-right: 10rem;   
-}*/ 
+  padding-right: 10rem;   
+}
 
 
 /*Pages Habitats et bloc 3 de la Home page*/
@@ -361,14 +366,14 @@ p {
     margin-left: 6.333333%;
 }
 }
+
 .bg-arc-mint-green-light{
   background-color: #d1f8cebb;
   margin-right: 5.5rem;  
   margin-left: 5.5rem;
 }
 
-
-.bg-arc-mint-green {    
+.bg-arc-mint-green {   
   background-color: #0b4107;
   margin-right: 5.5rem;  
   margin-left: 5.5rem;  
@@ -401,15 +406,10 @@ p {
 
 /* La promo bloc 4 */
 #facts {
-  background-color: rgba(209, 248, 206, 0.7333333333);
+  background-color: #0b4107;
   margin-left: 5.5rem;  
   margin-right: 5.5rem
 
-}
-
-.pt-3 {
-  margin-left: 35px;
-  margin-right: 35px;
 }
 
 .row-promo {
@@ -432,7 +432,6 @@ p {
   align-items: center;
  }
 
-
 .img-top-animal-girafe {
   display: flex;
   /*max-width: 100%;
@@ -444,7 +443,8 @@ p {
 }
 
 #girafe {
-  background-color: #0b4107;
+  font-size: 18px;
+  background-color: #d1f8cebb;
   border-radius: 10px;
   margin-left: -5rem;
   margin-right: -4rem;
@@ -460,14 +460,6 @@ p {
   .d-lg-flex {
       display: flex !important;
   }
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.align-items-center {
-  align-items: center !important;
 }
 
 @media (min-width: 992px) {
@@ -487,6 +479,7 @@ img, svg {
   box-shadow: 2px 2px #044d29;
   border-radius: 50%;
   transition: transform .5s ease;
+  margin-top: 20px;
 }
 
 .btn-services {
@@ -503,18 +496,11 @@ img, svg {
     height: 150px; 
 }
 
-/* Page de la jungle et les pages des animaux*/
-
-.jaguard {
-  height: auto;
-  width: 300px;
-}
+/* Page des habitats*/
 
 
-/*Page du marais et les pages des animaux*/
-.flamand {
-  height: auto;
-  width: 300px;
+.fw-normal-habitats {
+  margin-bottom: 1rem;
 }
 
 #animal_intro {
@@ -523,15 +509,30 @@ img, svg {
   margin: 10px -300px 10px -300px
 }
 
-.img-habitat {
+.marais3 {
+  opacity: 0.2;
+
+}
+/*.img-habitat {
   margin: 0px 10px 10px -50px;
+
+}*/
+
+.img-habitat {
+  max-height: 240px;
+  box-shadow: 2px 2px #044d29;
+  border-radius: 5%;
 }
 
-/*Page de la savane et les pages des animaux*/
-.lion {
-  margin-top: -16px;
-  height: auto;
-  width: 230px;
+#habitat_Part {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.habitats {
+  color: #044d29;
+  //text-shadow: 2px 2px #084b02;
+  font-size: 45px;
 }
 
 /* Page services */
@@ -563,4 +564,23 @@ img, svg {
 .habitats-presentation {
   margin-left: 5.5rem;
   margin-right: 5.5rem;
+}
+
+.habitat-marais {
+    background-color: rgba(209, 248, 206, 0.7333333333);
+    margin-right: -23.3rem;
+    margin-left: -23.3rem;
+    
+}
+
+.img-habitat-marais {
+  margin: 0px 10px 10px -50px;
+  max-width: 65%;
+}
+
+// Page COntact
+
+.contact-lion {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
