@@ -7,8 +7,6 @@
     padding: 0;
 }
 
-
-
 /*Mise en page du html, body, main...*/
 html, body {
     position: relative;
@@ -26,9 +24,6 @@ body {
   position: relative;
   //background-color: #d1f8cebb;
 }
-
-
-
 
 // Le header
 .navbar {
@@ -78,7 +73,6 @@ body {
 }
 
 // Le footer
-
 .footer-clean {
     padding:14px 20px;
     background-color: #0b4107;
@@ -168,26 +162,21 @@ body {
     opacity:0.6;
   }
   
-  /*Bloquer le footer en bas de page, meme si la page est vide*/
+/*Bloquer le footer en bas de page, meme si la page est vide*/
 /*.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-end;
-} */
-
-
+}*/
 
 /*Modification du curseur au survol de la souris*/
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
     cursor: pointer;
 }
 
-
-
 /* Mise en place de la page 404 */
 .erreur {
-
   background-image: url(/images/image_zoo.jpg);
   margin-top: 10rem;
   display: flex;
@@ -195,8 +184,6 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   justify-content: flex-start;
   align-items: center;
 }
-
-
 
 /*Mise en place bloc titre qui sera repeté sur toutes les pages*/
 .hero-scene {
@@ -215,8 +202,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   * {
       /* positionner les éléments devant le before*/
       position: relative;
-  }
-  
+  }  
 }
 
 .hero-scene-content {
@@ -229,16 +215,9 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   align-items: center;
 }
 
-
 /*Page Home Mise ne page du carrousel bloc 1*/
 #carousel {
-  position: relative;
-  
-}
-
-.carrousel {
-  padding-top: 1.4rem !important;
-  
+  position: relative;  
 }
 
 .carousel-caption {
@@ -247,18 +226,19 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   /*color: #eefaec;*/  
 }
 
+// explorer un habitats marais, jungle, savane
+// partie promo
 .py-3 {
   padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  
+  padding-bottom: 1rem !important;  
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
-  
+  margin-bottom: 1.5rem !important;  
 }
 
-.pt-3 {
+// partie promo
+.promo {
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -293,8 +273,12 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   }
 }
 
-/*Présentation du zoo   bloc 2et page Habitats*/
-#welcome {
+.services-home {
+  text-align: center;
+}
+
+/*Présentation du zoo   bloc 2 et page Habitats*/
+/*#welcome {
   background-color: #0b4107;
   display: block;
   margin-left: 90px;
@@ -302,8 +286,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 100%;
   height: auto;
   padding-left: 10rem; /* ajuster selon tes besoins */
-  padding-right: 10rem;   
-}
+  /*padding-right: 10rem;  
+} */
 
 
 /*Pages Habitats et bloc 3 de la Home page*/
@@ -583,4 +567,51 @@ img, svg {
 .contact-lion {
   margin-left: 5rem;
   margin-right: 5rem;
+  font-size: 24px;
+}
+
+.lion-contact {
+  height: 60%;
+  margin-top: 5rem;
+}
+
+.image-gazelle {
+  height: 60%;
+  margin: 50px 5px 5px 5px;
+}
+
+// les animaux
+.card img {
+  max-height: 250px;
+  border-radius: 20px;
+}
+
+.px-2 {
+  //padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .pe-md-2 {
+      padding-right: 2.5rem !important;
+  }
+}
+
+.rounded-5 {
+  border-radius: var(--bs-border-radius-xxl) !important;
+}
+
+.bg-arc-secondary {
+  background-color: #0b4107;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.d-flex {
+  display: flex !important;
 }

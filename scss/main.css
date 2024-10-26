@@ -12124,7 +12124,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-end;
-} */
+}*/
 /*Modification du curseur au survol de la souris*/
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
   cursor: pointer;
@@ -12175,10 +12175,6 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   position: relative;
 }
 
-.carrousel {
-  padding-top: 1.4rem !important;
-}
-
 .carousel-caption {
   background-color: rgba(0, 38, 28, 0.8);
   border-radius: 20px;
@@ -12194,7 +12190,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;
 }
 
-.pt-3 {
+.promo {
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -12224,7 +12220,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     margin-top: 0.5rem !important;
   }
 }
-/*Présentation du zoo   bloc 2et page Habitats*/
+.services-home {
+  text-align: center;
+}
+
+/*Présentation du zoo   bloc 2 et page Habitats*/
 /*#welcome {
   background-color: #0b4107;
   display: block;
@@ -12233,8 +12233,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 100%;
   height: auto;
   padding-left: 10rem; /* ajuster selon tes besoins */
-/*padding-right: 10rem;   
-}*/
+/*padding-right: 10rem;  
+} */
 /*Pages Habitats et bloc 3 de la Home page*/
 /*@media (min-width: 768px) {
   .my-md-4 {
@@ -12486,4 +12486,50 @@ img, svg {
 .contact-lion {
   margin-left: 5rem;
   margin-right: 5rem;
+  font-size: 24px;
+}
+
+.lion-contact {
+  height: 60%;
+  margin-top: 5rem;
+}
+
+.image-gazelle {
+  height: 60%;
+  margin: 50px 5px 5px 5px;
+}
+
+.card img {
+  max-height: 250px;
+  border-radius: 20px;
+}
+
+.px-2 {
+  padding-left: 2.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .pe-md-2 {
+    padding-right: 2.5rem !important;
+  }
+}
+.rounded-5 {
+  border-radius: var(--bs-border-radius-xxl) !important;
+}
+
+.bg-arc-secondary {
+  background-color: #0b4107;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.d-flex {
+  display: flex !important;
 }/*# sourceMappingURL=main.css.map */
