@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<iv class="container my-md-4 py-3">
+<div class="container my-md-4 py-3">
   <section id="contact_top">
           
       <div class="row">
@@ -38,13 +38,14 @@
               </div>
               <div class="mb-3">
                 <label for="InputPassword" class="form-label text-light">Mot de passe</label>
-                <input type="password" class="form-control" id="InputPassword" placeholder="**********">
+                <input type="password" class="form-control" id="InputPassword" autocomplete="current-password" placeholder="**********">
+                <button type="button" class="btn btn-light" id="togglePassword">Afficher</button>
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
                 <label class="form-check-label souvenir text-light" for="Check1">Se souvenir de moi</label>
               </div>
-              <button type="button" class="btn btn-primary" id="btnSingin">Connexion</button>
+              <button type="button" class="btn btn-light" id="btnSingin">Connexion</button>
 
           </form>
       </div>

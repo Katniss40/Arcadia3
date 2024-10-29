@@ -237,6 +237,10 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;  
 }
 
+.card-text {
+  font-size: 14px;
+}
+
 // partie promo
 .promo {
   margin-left: 35px;
@@ -393,7 +397,6 @@ p {
   background-color: #0b4107;
   margin-left: 5.5rem;  
   margin-right: 5.5rem
-
 }
 
 .row-promo {
@@ -480,6 +483,9 @@ img, svg {
     height: 150px; 
 }
 
+button { margin-top: 10px;}
+
+
 /* Page des habitats*/
 
 
@@ -537,7 +543,6 @@ img, svg {
 .contact {
   margin-left: 5.5rem;
   margin-right: 5.5rem;
-
 }
 
 .souvenir {
@@ -553,8 +558,7 @@ img, svg {
 .habitat-marais {
     background-color: rgba(209, 248, 206, 0.7333333333);
     margin-right: -23.3rem;
-    margin-left: -23.3rem;
-    
+    margin-left: -23.3rem;    
 }
 
 .img-habitat-marais {
@@ -576,7 +580,7 @@ img, svg {
 }
 
 .image-gazelle {
-  height: 60%;
+  height: 50%;
   margin: 50px 5px 5px 5px;
 }
 

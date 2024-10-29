@@ -12190,6 +12190,10 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;
 }
 
+.card-text {
+  font-size: 14px;
+}
+
 .promo {
   margin-left: 35px;
   margin-right: 35px;
@@ -12409,6 +12413,10 @@ img, svg {
   height: 150px;
 }
 
+button {
+  margin-top: 10px;
+}
+
 /* Page des habitats*/
 .fw-normal-habitats {
   margin-bottom: 1rem;
@@ -12495,7 +12503,7 @@ img, svg {
 }
 
 .image-gazelle {
-  height: 60%;
+  height: 50%;
   margin: 50px 5px 5px 5px;
 }
 
