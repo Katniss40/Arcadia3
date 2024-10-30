@@ -37,7 +37,7 @@ export const allRoutes = [
     new Route("/zebres", "Zebres", "/pages/savane/zebres.html"),
     new Route("/habitats", "Habitats", "/pages/habitats.html"),
     new Route("/contact", "Contact", "/pages/contact.html"),
-    new Route("/connexion", "Connexion", "/pages/connexion.html", "/js/auth/singin.js"),
+    new Route("/connexion", "Connexion", "/pages/connexion.html", "/js/auth/signin.js"),
 
 ];
 

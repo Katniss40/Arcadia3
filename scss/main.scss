@@ -241,6 +241,17 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   font-size: 14px;
 }
 
+.card-habitat .card-title {
+  font-size: 1.4em;
+  background-color: rgba(0, 38, 28, .8);
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+}
+
 // partie promo
 .promo {
   margin-left: 35px;
@@ -282,16 +293,20 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 /*Présentation du zoo   bloc 2 et page Habitats*/
-/*#welcome {
+#welcome-habitats {
   background-color: #0b4107;
   display: block;
-  margin-left: 90px;
-  margin-right: 90px;
   max-width: 100%;
   height: auto;
-  padding-left: 10rem; /* ajuster selon tes besoins */
-  /*padding-right: 10rem;  
-} */
+  margin: 0 90px 0 90px;    
+} 
+
+@media (min-width: 768px) {
+  .col-md-8 {
+      flex: 0 0 auto;
+      width: 67%;
+  }
+}
 
 
 /*Pages Habitats et bloc 3 de la Home page*/
@@ -345,7 +360,7 @@ p {
 @media (min-width: 768px) {
   .col-md-3 {
       flex: 0 0 auto;
-      width: 26%;
+      width: 16%;
   }
 }
 
@@ -355,6 +370,8 @@ p {
 }
 }
 
+
+//autres 
 .bg-arc-mint-green-light{
   background-color: #d1f8cebb;
   margin-right: 5.5rem;  
@@ -365,17 +382,6 @@ p {
   background-color: #0b4107;
   margin-right: 5.5rem;  
   margin-left: 5.5rem;  
-}
-
-.card-habitat .card-title {
-  font-size: 1.4em;
-  background-color: rgba(0, 38, 28, .8);
-  border-radius: 20px;
-  padding: 5px 15px;
-  text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
 }
 
 .titres {
@@ -483,7 +489,7 @@ img, svg {
     height: 150px; 
 }
 
-button { margin-top: 10px;}
+
 
 
 /* Page des habitats*/
@@ -618,4 +624,9 @@ button { margin-top: 10px;}
 }
 .d-flex {
   display: flex !important;
+}
+
+
+button { 
+  margin-top: 10px;
 }

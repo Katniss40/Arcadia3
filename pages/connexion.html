@@ -29,23 +29,23 @@
 
           <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php">
               <div class="mb-3">
-                <label for="InputEmail" class="form-label text-light">Adresse M@il</label>
-                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="mon.nom@email.com">
+                <label for="inputEmail" class="form-label text-light">Adresse M@il</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="mon.nom@email.com">
                 <div class="invalid-feedback">
-                  Le mail et le mot de passe ne corresponde pas aux données enregistrées
+                  Le mail et le mot de passe ne corresponde pas aux données transmises par votre direction
                 </div>
                 <div id="emailHelp" class="form-text text-light">Entrez l'adresse mail communiquer à votre direction.</div>
               </div>
               <div class="mb-3">
-                <label for="InputPassword" class="form-label text-light">Mot de passe</label>
-                <input type="password" class="form-control" id="InputPassword" autocomplete="current-password" placeholder="**********">
-                <button type="button" class="btn btn-light" id="togglePassword">Afficher</button>
+                <label for="inputPassword" class="form-label text-light">Mot de passe</label>
+                <input type="password" class="form-control" id="inputPassword" autocomplete="current-password" placeholder="**********">
+                <!--<button type="button" class="btn btn-light" id="togglePassword">Afficher</button>-->
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
                 <label class="form-check-label souvenir text-light" for="Check1">Se souvenir de moi</label>
               </div>
-              <button type="button" class="btn btn-light" id="btnSingin">Connexion</button>
+              <button type="button" class="btn btn-light" id="btnSignin">Connexion</button>
 
           </form>
       </div>
