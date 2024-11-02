@@ -12034,7 +12034,7 @@ body {
 }
 
 .footer-clean {
-  padding: 14px 20px;
+  padding: 14px 20px 0 20px;
   background-color: #0b4107;
   color: white;
 }
@@ -12302,7 +12302,7 @@ p {
 @media (min-width: 768px) {
   .col-md-3 {
     flex: 0 0 auto;
-    width: 16%;
+    width: 25%;
   }
 }
 @media (min-width: 768px) {

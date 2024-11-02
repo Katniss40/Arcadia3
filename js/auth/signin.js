@@ -1,17 +1,17 @@
 // Page connexion  creation des variables
-const inputEmail = document.getElementById("inputEmail");
-const inputPassword = document.getElementById("inputPassword");
+const mailInput = document.getElementById("EmailInput");
+const passwordInput = document.getElementById("PasswordInput");
 const btnSignin = document.getElementById("btnSignin")
 
 // ecoute 
-inputEmail.addEventListener("keyup", validateForm);
-inputPassword.addEventListener("keyup", validateForm);
+mailInput.addEventListener("keyup", validateForm);
+passwordInput.addEventListener("keyup", validateForm);
 btnSignin.addEventListener("click", checkCredentials);
 
 // Fonction permettant de valider tous les formulaires
 function validateForm() {
-validateRequired(inputEmail);
-validateRequired(inputPassword);
+validateRequired(mailInput);
+validateRequired(passwordInput);
 }
 
 function validateRequired(input) {
@@ -26,22 +26,22 @@ function validateRequired(input) {
 }
 
 
-
 function checkCredentials() {
    // Info Factice  Il faudra appeler l'API (BDD)
 
-  if(inputEmail.value == "administrateur@arcadia.fr" && inputPassword.value == "admin") {
+  if(mailInput.value == "administrateur@arcadia.fr" && passwordInput.value == "admin") {
     alert("vous etes connecté");
 
     //Il faudra recuperer le vrai token
-    const token = "iaufhiauoiuvsuvqsihfqàpzisupwxihfopsihfpqsv";
-    setToken(token);
+    const token = "iaufhiaugp,ok,ryoij^n,foiuvsuvqsihfqàpzisupwxihfopsihfpqsv";
+    //setToken(token);
     // Placer ce token en cookie
-
+    //setCookie(RoleCookieName, "admin", 7);
     window.location.replace("/");
   }
    else {
-    inputEmail.classList.add("is-invalid");
-    inputPassword.classList.add("is-invalid");
+    mailInput.classList.add("is-invalid");
+    passwordInput.classList.add("is-invalid");
    }
 }
+
