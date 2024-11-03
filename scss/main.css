@@ -11988,6 +11988,11 @@ body {
   position: relative;
 }
 
+/*Modification du curseur au survol de la souris*/
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
 .navbar {
   border-bottom: solid #575757 2px;
   box-shadow: 0px 5px 5px #575757;
@@ -12009,25 +12014,6 @@ body {
     justify-content: flex-end;
   }
 }
-/*.connexion::after {
-  content: " Only Staff! ";
-  position: absolute;
-  top: 20px;
-  right: 90px;
-  transform: translateX(-50%);
-  padding: 5px;
-  font-size: 14px;
-  color: #4CAF50;
-  background-color: #fff;
-  border: 1px solid #4CAF50;
-  border-radius: 60px 0px 60px 0px;
-	-webkit-border-radius: 60px 0px 60px 0px;
-	-moz-border-radius: 60px 0px 60px 0px;
-	border: 5px solid #fff;
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
-}*/
 .connexion:hover::after {
   opacity: 1;
 }
@@ -12117,18 +12103,6 @@ body {
   opacity: 0.6;
 }
 
-/*Bloquer le footer en bas de page, meme si la page est vide*/
-/*.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-end;
-}*/
-/*Modification du curseur au survol de la souris*/
-button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
-  cursor: pointer;
-}
-
 /* Mise en place de la page 404 */
 .erreur {
   background-image: url(/images/image_zoo.jpg);
@@ -12139,7 +12113,6 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   align-items: center;
 }
 
-/*Mise en place bloc titre qui sera repeté sur toutes les pages*/
 .hero-scene {
   position: relative;
 }
@@ -12169,17 +12142,6 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   align-items: center;
 }
 
-/*Page Home Mise ne page du carrousel bloc 1*/
-#carousel {
-  position: relative;
-}
-
-.carousel-caption {
-  background-color: rgba(0, 38, 28, 0.8);
-  border-radius: 20px;
-  /*color: #eefaec;*/
-}
-
 .py-3 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
@@ -12189,24 +12151,55 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;
 }
 
-.card-text {
-  font-size: 14px;
+.bg-arc-secondary {
+  background-color: #0b4107;
 }
 
-.card-habitat .card-title {
-  font-size: 1.4em;
-  background-color: rgba(0, 38, 28, 0.8);
-  border-radius: 20px;
-  padding: 5px 15px;
-  text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.promo {
-  margin-left: 35px;
-  margin-right: 35px;
+.text-center {
+  text-align: center !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.bg-arc-mint-green-light {
+  background-color: rgba(209, 248, 206, 0.7333333333);
+  margin-right: 5.5rem;
+  margin-left: 5.5rem;
+}
+
+.bg-arc-mint-green {
+  background-color: #0b4107;
+  margin-right: 5.5rem;
+  margin-left: 5.5rem;
+}
+
+.no-underline {
+  color: #eefaec;
+  text-decoration: none;
+}
+
+.px-2 {
+  padding-left: 2.5rem !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+button {
+  margin-top: 10px;
 }
 
 @media (min-width: 1400px) {
@@ -12234,37 +12227,45 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     margin-top: 0.5rem !important;
   }
 }
-.services-home {
-  text-align: center;
-}
-
-/*Présentation du zoo   bloc 2 et page Habitats*/
-#welcome-habitats {
-  background-color: #0b4107;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 90px 0 90px;
-}
-
 @media (min-width: 768px) {
   .col-md-8 {
     flex: 0 0 auto;
     width: 67%;
   }
 }
-/*Pages Habitats et bloc 3 de la Home page*/
-/*@media (min-width: 768px) {
-  .my-md-4 {
-      margin-top: 1.5rem !important;
-      margin-bottom: 1.5rem !important;
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
   }
-}*/
-/*.welcom-gazelle {
-  text-align: center;
-  margin-left: -50px;
-  margin-right: -20px;
-}*/
+}
+@media (min-width: 768px) {
+  .offset-md-1 {
+    margin-left: 6.333333%;
+  }
+}
+@media (min-width: 992px) {
+  .d-lg-flex {
+    display: flex !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+/*Page Home Mise en page du carrousel bloc 1*/
+#carousel {
+  position: relative;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 38, 28, 0.8);
+  border-radius: 20px;
+}
+
+/*Pages Habitats et bloc 3 de la Home page -- bloc 1 de la page contact*/
 .gazelle1 {
   max-width: 100%;
   height: auto;
@@ -12283,56 +12284,37 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   justify-content: space-evenly;
 }
 
-/*.rect-upper-effect {
-  -webkit-clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
-  height: 50px;
-  background-color: #0b4107;
-}*/
-.text-center {
-  text-align: center !important;
+.card-text {
+  font-size: 14px;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-  .col-md-3 {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-}
-@media (min-width: 768px) {
-  .offset-md-1 {
-    margin-left: 6.333333%;
-  }
-}
-.bg-arc-mint-green-light {
-  background-color: rgba(209, 248, 206, 0.7333333333);
-  margin-right: 5.5rem;
-  margin-left: 5.5rem;
-}
-
-.bg-arc-mint-green {
-  background-color: #0b4107;
-  margin-right: 5.5rem;
-  margin-left: 5.5rem;
-}
-
-.titres {
-  background-color: white;
-  opacity: 1;
+.card-habitat .card-title {
+  font-size: 1.4em;
   background-color: rgba(0, 38, 28, 0.8);
-  color: white;
-  opacity: 0.9;
   border-radius: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
 }
 
-.no-underline {
-  color: #eefaec;
-  text-decoration: none;
+.promo {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.services-home {
+  text-align: center;
+}
+
+/*Pages tous les habitats*/
+#welcome-habitats {
+  background-color: #0b4107;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 90px 0 90px;
 }
 
 /* La promo bloc 4 */
@@ -12357,12 +12339,12 @@ p {
 
 .img-top-animal-girafe {
   display: flex;
-  /*max-width: 100%;
-  align-items: center;  
+  max-width: 100%;
+  align-items: center;
   height: auto;
-  width: 470px;  
+  width: 470px;
   margin-left: 15px;
-  margin-right: 15px;*/
+  margin-right: 15px;
 }
 
 #girafe {
@@ -12373,22 +12355,6 @@ p {
   margin-right: -4rem;
 }
 
-/* Les services blocs 5*/
-/*.services-img {
-  width: 150px;
-  height: 150px;
-}*/
-@media (min-width: 992px) {
-  .d-lg-flex {
-    display: flex !important;
-  }
-}
-@media (min-width: 992px) {
-  .col-lg-4 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-  }
-}
 img, svg {
   vertical-align: middle;
 }
@@ -12410,10 +12376,13 @@ img, svg {
   margin-bottom: -20px;
 }
 
-/* Page Connexion*/
-.avatar {
-  width: 150px;
-  height: 150px;
+.titres {
+  background-color: white;
+  opacity: 1;
+  background-color: rgba(0, 38, 28, 0.8);
+  color: white;
+  opacity: 0.9;
+  border-radius: 20px;
 }
 
 /* Page des habitats*/
@@ -12430,10 +12399,6 @@ img, svg {
   opacity: 0.2;
 }
 
-/*.img-habitat {
-  margin: 0px 10px 10px -50px;
-
-}*/
 .img-habitat {
   max-height: 240px;
   box-shadow: 2px 2px #044d29;
@@ -12511,10 +12476,6 @@ img, svg {
   border-radius: 20px;
 }
 
-.px-2 {
-  padding-left: 2.5rem !important;
-}
-
 @media (min-width: 768px) {
   .pe-md-2 {
     padding-right: 2.5rem !important;
@@ -12522,25 +12483,4 @@ img, svg {
 }
 .rounded-5 {
   border-radius: var(--bs-border-radius-xxl) !important;
-}
-
-.bg-arc-secondary {
-  background-color: #0b4107;
-}
-
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.flex-column {
-  flex-direction: column !important;
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-button {
-  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
