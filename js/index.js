@@ -1,7 +1,4 @@
-
 const tokenCookieName = "accesstoken";
-
-
 
 
 function setToken(token){
@@ -15,7 +12,7 @@ function getToken() {
 function setCookie(name, value, days) {
     var expires = "";
     if(days) {
-        var date = new date();
+        var date = new Date();
         date.setTime(date.getTime() + (days*24*60*60*1000));
         expires = "; expires= " + date.toUTCString();
     };
