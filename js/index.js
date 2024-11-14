@@ -111,6 +111,3 @@ function setCookie(name,value,days) {
                 };
             });
         }
-
-
-        

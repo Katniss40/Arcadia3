@@ -6,17 +6,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$conn = new mysqli('mysql-zoo-arcadia-2025.alwaysdata.net', '383336', '@Admin2025', 'zoo-arcadia-2025_zoo');
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-//$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
-//$username = '383336';
-//$password =  '@Admin2025';
-//$dbname = 'zoo-arcadia-2025_zoo';
 
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
-
+echo "Connexion réussi!";
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM animaux WHERE id = ?";

@@ -1,21 +1,20 @@
 <?php
-session_start();
-include 'session_check.php';
+//session_start();
+//include 'session_check.php';
+include 'db_connexion.php';
 
-$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
-$dbname = 'zoo-arcadia-2025_zoo';
-$username = '383336';
-$password =  '@Admin2025';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
+echo "Connexion réussi!";
 
-$result = $conn->query("SHOW COLUMNS FROM animals LIKE 'unité_nourriture'");
+
+$result = $conn->query("SHOW COLUMNS FROM animaux LIKE 'unite_nourriture'");
 if ($result->num_rows == 0) {
-    $conn->query("ALTER TABLE animals ADD COLUMN unité_nourriture VARCHAR(255) NOT NULL");
+    $conn->query("ALTER TABLE animaux ADD COLUMN unite_nourriture VARCHAR(255) NOT NULL");
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $remarques = $_POST['remarques'] ?? '';
 
     if (!empty($nom) && !empty($habitat) && !empty($espece) && !empty($age) && !empty($poids) && !empty($nourriture) && !empty($unite_nourriture) && !empty($dernier_repas) && !empty($quantite_requise)) {
-        $sql = "INSERT INTO animals (nom, habitat, espece, age, poids, nourriture, unite_nourriture, dernier_repas, quantite_requise, commentaires, remarques) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO animaux (nom, habitat, espece, age, poids, nourriture, unite_nourriture, dernier_repas, quantite_requise, commentaires, remarques) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         if ($stmt === false) {
             die("Erreur de préparation de la requête : " . $conn->error);
@@ -183,30 +182,33 @@ $result = $conn->query($sql);
             </thead>
             <tbody>
                 <?php
-                $conn = new mysqli("mysql-zooarcadiaa.alwaysdata.net", "376865", "Marley2809", "zooarcadiaa_zoo");
+
+
+                $conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net", "383336", "@Admin2025", "zoo-arcadia-2025_zoo");
 
                 if ($conn->connect_error) {
                     die("Échec de la connexion : " . $conn->connect_error);
                 }
 
-                $sql = "SELECT * FROM animals";
+                $sql = "SELECT * FROM animaux";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . htmlspecialchars($row['animal_name']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['species']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['nom']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['habitat']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['espece']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['age']) . " ans</td>";
-                        echo "<td>" . htmlspecialchars($row['weight']) . " kg</td>";
-                        echo "<td>" . htmlspecialchars($row['food']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['last_meal']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['food_quantity']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['unité_nourriture']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['health_comment']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['private_comment']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['poids']) . " kg</td>";
+                        echo "<td>" . htmlspecialchars($row['nourriture']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['unite_nourriture']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['dernier_repas']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['quantite_requise']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['commentaires']) . "</td>";
+                        echo "<td>" . htmlspecialchars($row['remarques']) . "</td>";
                         echo "<td><a href='edit_animal.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm'>Modifier</a> ";
-                        echo "<a href='delete_animal.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm'>Supprimer</a></td>";
+                        echo "<a href='supp_animal.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm'>Supprimer</a></td>";
                         echo "</tr>";
                     }
                 } else {

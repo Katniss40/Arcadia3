@@ -1,17 +1,16 @@
 <?php
-session_start();
-include 'session_check.php';
+//session_start();
+//include 'session_check.php';
 
-$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
-$dbname = 'zoo-arcadia-2025_zoo';
-$username = '383336';
-$password =  '@Admin2025';
+include 'db_connexion.php';
+
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
+echo "Connexion réussi!";
 
 $sql_animaux = "SELECT * FROM animaux";
 $result_animaux = $conn->query($sql_animaux);

@@ -2,6 +2,11 @@
 //session_start();
 include 'db_connexion.php';
 
+if($conn->connect_error) {
+  die("erreur de connexion: " .$conn->connect_error);
+}
+echo "Connexion réussi!";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -91,15 +96,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </form>
       </div>
   </section>
-</div>
-
-
-
-
-            
+</div>          
 
 
 
 
 
-</div>
+
+
+
+
+
+
