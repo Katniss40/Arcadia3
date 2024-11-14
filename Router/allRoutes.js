@@ -37,7 +37,7 @@ export const allRoutes = [
     new Route("/zebres", "Zebres", "/pages/savane/zebres.html", []),
     new Route("/habitats", "Habitats", "/pages/habitats.html", []),
     new Route("/contact", "Contact", "/pages/contact.html", []),
-    new Route("/connexion", "Connexion", "/pages/connexion.html", ["disconnected"], "/js/auth/signin.js"),             
+    new Route("/connexion", "Connexion", "/pages/connexion.php", ["disconnected"]),             
     new Route("/gestionH", "habitats", "/pages/staff/gestion_habitat.html", ["admin"]),
     new Route("/editA", "animaux", "/pages/staff/edit_animal.html", ["admin", "employe", "veterinaire"]),
     new Route("/admin", "admin", "/pages/staff/admin.html", ["admin"]), 

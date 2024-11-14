@@ -1,6 +1,5 @@
 <?php
-session_start();
-
+//session_start();
 include 'db_connexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,9 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
-
-
-
 
 ?>
 
@@ -92,7 +88,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-check-label souvenir text-light" for="Check1">Se souvenir de moi</label>
               </div>
               <button type="submit" class="btn btn-light" id="btnSignin">Connexion</button>
-<!--submit-->
           </form>
       </div>
   </section>
