@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="/scss/main.css"/>
     <script src="https://kit.fontawesome.com/61c7fa05f4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
     <link rel="icon" href="/images/logo3.png" type="image/gif">
+    <title>Document</title>
+    
 </head>
 <body>
   <div class="wrapper">
@@ -48,20 +49,40 @@
                 <a class="nav-link text-light" href="/contact">Contact</a>
               </li>              
             </ul>
-            <a type="button" class="btn connexion btn-outline-light me-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" href="/connexion">Connexion</a>
-          </div>
+            
+            <li class="nav-item" data-show="admin employe">
+              <a class="btn btn-outline-light me-2" href="/employe">Espace Employé</a>
+            </li>
+            <li class="nav-item" data-show="admin veterinaire">
+              <a class="btn btn-outline-light me-2" href="/sante">Espace Vétérinaire</a>
+            </li>
+            <li class="nav-item" data-show="admin">
+              <a class="btn btn-outline-light me-2" href="/admin">Espace Administrateur</a>
+            </li>
+
+            <li class="nav-item" data-show="connected">
+              <a class="btn btn-outline-light me-2" id="signout-btn">Deconnexion</a>
+            </li>
+
+            <li class="nav-item" data-show="disconnected">
+              <a class="btn connexion btn-outline-light me-2" href="./connexion">Connexion staff</a>
+            </li>
+          
+            <!--<a type="button" class="btn connexion btn-outline-light me-2" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" href="/connexion">Connexion</a>
+            <button class="btn btn-outline-light" id="btnSignout">Deconnexion</button>-->
         </div>
       </nav>
     </header>
     
     <main id="main-page">
+
 <!-- Le contenu de la page sera injectée ici-->
     </main>
 
 
     <div class="footer-clean">
       <footer>
-          <!--<div class="container ">-->
+          <div class="container-footer">
               <div class="row justify-content-center">
                   <div class="col-sm-4 col-md-3 item">
                     <h5 class="text-black">Nos horaires</h5>
@@ -71,25 +92,25 @@
                   <div class="col-sm-4 col-md-3 item">
                     <h5 class="text-black">Où nous trouver</h5>
                     <p> 497, route des sables</br>
-                     06050 Broceliandes</br>
+                     35050 Broceliandes</br>
                      Tel : 06.05.04.03.02
                      </p>
                   </div>
-                  <div class="col-sm-4 col-md-3 item social">
-                    <h5>Mentions légale</h5>
+                  <div class="col-sm-4 col-md-3">
+                    <a class="text-light" href="mentions_legales.docx">Mentions légale</a>
                     <h5>Zoo Arcadia © 2025</h5>
                     
-                                   
+                    <!--<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">(https://github.com/SamKirkland/FTP-Deploy-Action)-->                 
                   </div>
-                  <div class="col-lg-3 item ">
-                  </div>
+                  
               </div>
-          <!--</div>-->
+          </div>
       </footer>
     </div>
 
   </div>
-    <script type="module" src="/js/index.js"></script>
+    
+    <script src="/js/index.js"></script>
     <script type="module" src="/Router/router.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

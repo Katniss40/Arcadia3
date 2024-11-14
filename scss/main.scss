@@ -1,72 +1,51 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
+/////////////////////////////////////////////////////////////////////
+
 // Remise a zero de la page
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*Mise en page du html, body, main...*/
 html, body {
-    position: relative;
-    min-height: 100vh;        
+  position: relative;
+  min-height: 100vh;
 }
 
 body {
-  text-align: center;
+text-align: center;
 }
 
 #main-page {
-  max-width: 1870px;
-  min-height: 100%;
-  margin: 0 auto;
-  position: relative;
-  //background-color: #d1f8cebb;
+max-width: 1870px;
+min-height: 100%;
+margin: 0 auto;
+position: relative;
+}
+
+/*Modification du curseur au survol de la souris*/
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
 }
 
 // Le header
 .navbar {
-    border-bottom: solid #575757 2px;
-    box-shadow: 0px 5px 5px #575757;
-    margin: 0 0px 0px 0px; 
+  border-bottom: solid #575757 2px;
+  box-shadow: 0px 5px 5px #575757;
+  margin: 0 0px 0px 0px; 
 }
 
 .fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
-}
-
-.connexion::after {
-  content: " Only Staff! ";
-  position: absolute;
-  top: 20px;
-  right: 90px;
-  transform: translateX(-50%);
-  padding: 5px;
-  font-size: 14px;
-  color: #4CAF50;
-  background-color: #fff;
-  border: 1px solid #4CAF50;
-  border-radius: 60px 0px 60px 0px;
-	-webkit-border-radius: 60px 0px 60px 0px;
-	-moz-border-radius: 60px 0px 60px 0px;
-	border: 5px solid #fff;
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
-}
 
 .connexion:hover::after {
   opacity: 1;
@@ -74,118 +53,80 @@ body {
 
 // Le footer
 .footer-clean {
-    padding:14px 20px;
-    background-color: #0b4107;
-    color:white;
-  }
-  
-  .footer-clean h3 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
-  }
-  
-  .footer-clean ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:0;
-  }
-  
-  .footer-clean ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-clean ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-clean .item.social {
-    text-align:center;
-  }
-  
-  @media (max-width:767px) {
-    .footer-clean .item {
-      text-align:center;
-      padding-bottom:20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer-clean .item.social {
-      text-align:center;
-      .d-md-block {
-        display: block !important;
-      }
-    }
-  }
-  
-  .footer-clean .item.social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin-left:10px;
-    margin-top:22px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-clean .item.social > a:hover {
-    opacity:0.5;
-  }
-  
-  @media (max-width:991px) {
-    .footer-clean .item.social > a {
-      margin-top:40px;
-    }
-  }
-  
-  @media (max-width:767px) {
-    .footer-clean .item.social > a {
-      margin-top:10px;
-    }
-  }
-  
-  .footer-clean .copyright {
-    margin-top:14px;
-    margin-bottom:0;
-    font-size:13px;
-    opacity:0.6;
-  }
-  
-/*Bloquer le footer en bas de page, meme si la page est vide*/
-/*.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-end;
-}*/
-
-/*Modification du curseur au survol de la souris*/
-button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
-    cursor: pointer;
+  padding:14px 20px 0 20px;
+  background-color: #0b4107;
+  color:white;
 }
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:center;
+}
+
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.5;
+}
+
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}  
 
 /* Mise en place de la page 404 */
 .erreur {
   background-image: url(/images/image_zoo.jpg);
   margin-top: 10rem;
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-/*Mise en place bloc titre qui sera repeté sur toutes les pages*/
+//Mise en place bloc titre qui sera repeté sur toutes les pages
 .hero-scene {
   position: relative;
   &::before{
@@ -215,19 +156,12 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   align-items: center;
 }
 
-/*Page Home Mise ne page du carrousel bloc 1*/
-#carousel {
-  position: relative;  
+// Style commun a tous les blocs/ paragraphes/ et autre mise en page
+#body {
+  margin-left: 5.5rem !important;
+  margin-right: 5.5rem !important;
 }
 
-.carousel-caption {
-  background-color: rgba(0, 38, 28, .8);
-  border-radius: 20px;
-  /*color: #eefaec;*/  
-}
-
-// explorer un habitats marais, jungle, savane
-// partie promo
 .py-3 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;  
@@ -237,14 +171,91 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 1.5rem !important;  
 }
 
-.card-text {
-  font-size: 14px;
+.bg-arc-secondary {
+  background-color: #0b4107;
 }
 
-// partie promo
-.promo {
-  margin-left: 35px;
-  margin-right: 35px;
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+p {
+  margin-top: 3px;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.bg-arc-mint-green-light{
+  background-color: #d1f8cebb;
+
+}
+
+.bg-arc-mint-green {   
+  background-color: #0b4107;
+
+}
+
+.no-underline {
+  color: #eefaec;
+  text-decoration: none;
+}
+
+.px-2 {
+  padding-left: 2.5rem !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+button { 
+  margin-top: 10px;
+}
+
+// Les medias
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      justify-content: flex-end;
+  }
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+    .d-md-block {
+      display: block !important;
+    }
+  }
 }
 
 @media (min-width: 1400px) {
@@ -277,171 +288,25 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   }
 }
 
-.services-home {
-  text-align: center;
-}
-
-/*Présentation du zoo   bloc 2 et page Habitats*/
-/*#welcome {
-  background-color: #0b4107;
-  display: block;
-  margin-left: 90px;
-  margin-right: 90px;
-  max-width: 100%;
-  height: auto;
-  padding-left: 10rem; /* ajuster selon tes besoins */
-  /*padding-right: 10rem;  
-} */
-
-
-/*Pages Habitats et bloc 3 de la Home page*/
-
-/*@media (min-width: 768px) {
-  .my-md-4 {
-      margin-top: 1.5rem !important;
-      margin-bottom: 1.5rem !important;
+@media (min-width: 768px) {
+  .col-md-8 {
+      flex: 0 0 auto;
+      width: 67%;
   }
-}*/
-
-/*.welcom-gazelle {
-  text-align: center;
-  margin-left: -50px;
-  margin-right: -20px;
-}*/
-
-.gazelle1 {
-  max-width: 100%;
-  height: auto;
-  width: 100px;
-}
-
-.gazelle-text {
-  margin-top: 1rem;
-}
-
-.gazelle-titre {
-  display: flex;
-  flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-}
-/*.rect-upper-effect {
-  -webkit-clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
-  height: 50px;
-  background-color: #0b4107;
-}*/
-
-.text-center {
-  text-align: center !important;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .col-md-3 {
       flex: 0 0 auto;
-      width: 26%;
+      width: 25%;
   }
 }
 
 @media (min-width: 768px) {
   .offset-md-1 {
     margin-left: 6.333333%;
+  }
 }
-}
-
-.bg-arc-mint-green-light{
-  background-color: #d1f8cebb;
-  margin-right: 5.5rem;  
-  margin-left: 5.5rem;
-}
-
-.bg-arc-mint-green {   
-  background-color: #0b4107;
-  margin-right: 5.5rem;  
-  margin-left: 5.5rem;  
-}
-
-.card-habitat .card-title {
-  font-size: 1.4em;
-  background-color: rgba(0, 38, 28, .8);
-  border-radius: 20px;
-  padding: 5px 15px;
-  text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
-}
-
-.titres {
-  background-color: white;
-  opacity: 1;
-  background-color: rgba(0, 38, 28, .8);
-  color: white;
-  opacity: 0.9;
-  border-radius: 20px;
-}
-
-.no-underline {
-  color: #eefaec;
-  text-decoration: none;
-}
-
-/* La promo bloc 4 */
-#facts {
-  background-color: #0b4107;
-  margin-left: 5.5rem;  
-  margin-right: 5.5rem
-}
-
-.row-promo {
-  //text-align: center;
-  display: flex;
-  //margin: 0;  
-  //margin-left: 5.5rem;  
-  //margin-right: 5.5rem
-  ;
-  //width: 1600px;
-  //height: 250px;
-}
-
-.row-girafe {   
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
- }
-
-.img-top-animal-girafe {
-  display: flex;
-  /*max-width: 100%;
-  align-items: center;  
-  height: auto;
-  width: 470px;  
-  margin-left: 15px;
-  margin-right: 15px;*/
-}
-
-#girafe {
-  font-size: 18px;
-  background-color: #d1f8cebb;
-  border-radius: 10px;
-  margin-left: -5rem;
-  margin-right: -4rem;
-
-}
-/* Les services blocs 5*/
-/*.services-img {
-  width: 150px;
-  height: 150px;
-}*/
 
 @media (min-width: 992px) {
   .d-lg-flex {
@@ -455,6 +320,150 @@ p {
       width: 33.33333333%;
   }
 }
+
+@media (min-width: 768px) {
+  .pe-md-2 {
+      padding-right: 2.5rem !important;
+  }
+}
+
+/*Page Home Mise en page du carrousel bloc 1*/
+#carousel {
+  position: relative;  
+}
+
+.carousel-caption {
+  background-color: rgba(0, 38, 28, .8);
+  border-radius: 20px; 
+}
+
+#carrousel_avis {
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-success {
+  background-color: rgba(209, 248, 206, 0.7333333333);
+}
+
+.avis {
+  background-color: #0b4107;
+}
+
+.habitat {
+  background-color: rgba(209, 248, 206, 0.7333333333);
+}
+
+
+/*Pages Habitats et bloc 3 de la Home page -- bloc 1 de la page contact*/
+.gazelle1 {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+}
+
+.gazelle-text {
+  margin-top: 1rem;
+}
+
+.gazelle-titre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+// partie promo
+.card-text {
+  font-size: 14px;
+}
+
+.card-habitat .card-title {
+  font-size: 1.4em;
+  background-color: rgba(0, 38, 28, .8);
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+}
+
+
+
+.services-home {
+  text-align: center;
+}
+
+/*Pages tous les habitats*/
+#welcome-habitats {
+  background-color: #0b4107;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 90px 0 90px;    
+}
+
+/* La promo bloc 4 */
+#facts {
+  background-color: #0b4107;
+
+}
+
+.row-bloc_2 {
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
+.row-promo {
+   display: flex;
+   margin-left: -0.8rem;
+  margin-right: -0.8rem;
+  }
+
+.row-girafe {   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;  
+  margin-left: -0.8rem;
+  margin-right: -0.8rem; 
+ }
+
+.services-3{
+  padding-bottom: 1rem !important;
+}
+
+ #services {
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+ }
+
+.img-top-animal-girafe { 
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 28px 10px 72px 10px;
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  align-items: center;  
+
+}
+
+#girafe {  
+  font-size: 18px;
+  background-color: #d1f8cebb;
+  border-radius: 10px 28px 10px 72px;
+
+ } 
 
 img, svg {
   vertical-align: middle;
@@ -477,25 +486,23 @@ img, svg {
   margin-bottom: -20px;
 }
 
-/* Page Connexion*/
-.avatar {
-    width: 150px;
-    height: 150px; 
+//Titres 
+.titres {
+  background-color: white;
+  opacity: 1;
+  background-color: rgba(0, 38, 28, .8);
+  color: white;
+  opacity: 0.9;
+  border-radius: 20px;
 }
 
-button { margin-top: 10px;}
-
-
 /* Page des habitats*/
-
-
 .fw-normal-habitats {
   margin-bottom: 1rem;
 }
 
 #animal_intro {
   background-color: #0b4107;
- 
   margin: 10px -300px 10px -300px
 }
 
@@ -503,10 +510,6 @@ button { margin-top: 10px;}
   opacity: 0.2;
 
 }
-/*.img-habitat {
-  margin: 0px 10px 10px -50px;
-
-}*/
 
 .img-habitat {
   max-height: 240px;
@@ -514,14 +517,11 @@ button { margin-top: 10px;}
   border-radius: 5%;
 }
 
-#habitat_Part {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+
 
 .habitats {
   color: #044d29;
-  //text-shadow: 2px 2px #084b02;
+
   font-size: 45px;
 }
 
@@ -529,8 +529,7 @@ button { margin-top: 10px;}
 #service {
   margin-top: 20px;
   text-align: center;
-  margin-left: 420px;
-  margin-top: 15px;
+
 }
 
 .services {
@@ -540,25 +539,14 @@ button { margin-top: 10px;}
 }
 
 
-.contact {
-  margin-left: 5.5rem;
-  margin-right: 5.5rem;
-}
-
 .souvenir {
   display: flex;
   justify-content: flex-start;
 }
 
-.habitats-presentation {
-  margin-left: 5.5rem;
-  margin-right: 5.5rem;
-}
 
 .habitat-marais {
     background-color: rgba(209, 248, 206, 0.7333333333);
-    margin-right: -23.3rem;
-    margin-left: -23.3rem;    
 }
 
 .img-habitat-marais {
@@ -566,11 +554,12 @@ button { margin-top: 10px;}
   max-width: 65%;
 }
 
-// Page COntact
+// Page Contact
+#contact_top{
+margin-top: -16px;
+}
 
 .contact-lion {
-  margin-left: 5rem;
-  margin-right: 5rem;
   font-size: 24px;
 }
 
@@ -586,36 +575,28 @@ button { margin-top: 10px;}
 
 // les animaux
 .card img {
-  max-height: 250px;
+  max-height: 300px;
   border-radius: 20px;
-}
-
-.px-2 {
-  //padding-right: 2.5rem !important;
-  padding-left: 2.5rem !important;
-}
-
-@media (min-width: 768px) {
-  .pe-md-2 {
-      padding-right: 2.5rem !important;
-  }
+  //max-width: 300px;
 }
 
 .rounded-5 {
   border-radius: var(--bs-border-radius-xxl) !important;
 }
 
-.bg-arc-secondary {
-  background-color: #0b4107;
+.bg-arc-mint-green-light-staff {
+  background-color: rgba(209, 248, 206, 0.7333333333);
+ 
 }
 
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+.card-header {
+  background-color: #0b4107;
+  color: white;
 }
-.flex-column {
-  flex-direction: column !important;
+
+.card-footer  {
+  background-color: #0b4107;
+  color: white;
 }
-.d-flex {
-  display: flex !important;
-}
+
+

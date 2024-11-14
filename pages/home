@@ -1,0 +1,552 @@
+<!--Gros titre Injecté sur toutes les pages-->
+<div class="hero-scene text-center">
+  <div class="hero-scene-content">
+    <h1> Bienvenue au Zoo Arcadia</h1>
+    <a href="/images/zoo_map.png" class="btn btn-primary">Visite du Zoo</a>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Les Habitats   bloc 3-->  
+  <div class="row bg-arc-mint-green py-3">
+    <h2 class="habitat">Explorer un habitat</h2>
+    <section id="habitats">
+      <!--<div class="row bg-arc-mint-green py-3">-->        
+        <div class="col-12 col-lg-4 pb-3">
+          <div class="card card-habitat">
+            <img src="/images/Le_marais.png" class="card-img-top-animal z-0" alt="marais">
+              <div class="card-img-overlay d-flex align-items-start justify-content-center">
+                <h5 class="card-title text-light z-1">
+                  <a class="no-underline" href="/marais">Les Marais de Shrek</a>
+                </h5>
+              </div>
+              <div class="card-body bg-light d-flex flex-column">
+                <p class="card-text z-1">
+                  Entrez dans le marais mystérieux, un écosystème unique où l'eau et la terre se rencontrent. 
+                    Découvrez une variété d'animaux fascinants comme les alligators, les tortues aquatiques et les oiseaux des marais. 
+                    Explorez les plantes aquatiques exubérantes et apprenez comment elles contribuent à purifier l'eau et à fournir un habitat pour la faune locale.
+                </br>Chaque habitat vous offre une aventure immersive et éducative.
+                </p>
+                <div class="d-flex flex-xl-row justify-content-around">
+                  <a class="btn btn-arc-dark z-1 me-1" href="/marais"> Visiter la page </a>
+                    <button class="btn btn-outline-arc-dark z-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarais1" aria-expanded="false" aria-controls="collapseMarais">
+                      Voir les animaux
+                        <i class="fa-solid fa-arrow-down">
+                         
+                        </i>
+                    </button>
+                </div>
+                <div class="collapse" id="collapseMarais1">
+                  <h4>Animaux de la zone :</h4>
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Castor.png">Les Castors</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Flamand_rose.png">Le Flamand Rose</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/fourmiliers.png">Les Fourmiliers</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Heron.png">Le Heron</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Hibou.png">Le Hibou</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Loutre.png">La Loutre</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/suricat.png">Les Suricats</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/triton.png">Le Triton</a>
+                    </li>
+
+                    <li>
+                      <span class="fa-li">
+                        <i class="fa-solid fa-paw"></i>
+                      </span>
+                      <a class="link-arc-dark-green" href="/images/marais/Flamand_et_perroquets.png">Les Perroquets</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 pb-3">
+            <div class="card card-habitat">
+              <img src="/images/La_savane.png" class="card-img-top-animal z-0" alt="savane">
+                <div class="card-img-overlay d-flex align-items-start justify-content-center">
+                  <h5 class="card-title text-light z-1">
+                    <a class="no-underline" href="/savane">La Savane de Simba</a>
+                  </h5>
+                </div>
+                <div class="card-body bg-light d-flex flex-column">
+                  <p class="card-text z-1">
+                    Explorez la vaste savane africaine, maison des girafes majestueuses, des éléphants puissants et des lions royaux. 
+               Depuis les plateformes d'observation, regardez ces animaux emblématiques dans leur habitat naturel. 
+                Apprenez-en davantage sur la coexistence de ces espèces et sur les efforts de conservation pour protéger cet écosystème unique.
+            </br>C'est un parcours vraiment varié et captivant!
+                  </p>
+                  <div class="d-flex flex-xl-row justify-content-around">
+                    <a class="btn btn-arc-dark z-1 me-1" href="/savane"> Visiter la page </a>
+                      <button class="btn btn-outline-arc-dark z-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarais2" aria-expanded="false" aria-controls="collapseMarais">
+                        Voir les animaux
+                          <i class="fa-solid fa-arrow-down">
+                           
+                          </i>
+                      </button>
+                  </div>
+                  <div class="collapse" id="collapseMarais2">
+                    <h4>Animaux de la zone :</h4>
+                    <ul class="fa-ul">
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/Elephant.png">La femelle Elephant et son enfant</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/gazelle.png">La Gazelle</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/girafe1.png">La Girafe</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/Lion.png">Le Lion</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/Lionceaux.jpg">Nos Bébés Lionceaux</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/rinoceros.png">Les Rhinocéros</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/zebres.png">Les Zèbres</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/girafe antilope.png">Les Antilopes</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/savane/Elephant2.png">L'Eléphant</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 pb-3">
+          <div class="card card-habitat">
+            <img src="/images/La_jungle.png" class="card-img-top-animal z-0" alt="jungle">
+              <div class="card-img-overlay d-flex align-items-start justify-content-center">
+                <h5 class="card-title text-light z-1">
+                  <a class="no-underline" href="/jungle">La Jungle de Mowgli</a>
+                </h5>
+              </div>
+              <div class="card-body bg-light d-flex flex-column">
+                <p class="card-text z-1">
+                  Plongez dans la jungle luxuriante, des singes acrobatiques bondissent d'arbre en arbre, des oiseaux exotiques qui déploient leurs couleurs éclatantes, 
+                    la panthère noire, aussi appelée léopard noir, cachée dans un arbre  . 
+                    Découvrez la biodiversité incroyable de ce milieu et les relations symbiotiques entre les différentes espèces qui y vivent.
+                </br>Un vrai paradis tropical à explorer!
+                </p>
+                <div class="d-flex flex-xl-row justify-content-around">
+                  <a class="btn btn-arc-dark z-1 me-1" href="/jungle"> Visiter la page </a>
+                    <button class="btn btn-outline-arc-dark z-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarais3" aria-expanded="false" aria-controls="collapseMarais">
+                      Voir les animaux
+                        <i class="fa-solid fa-arrow-down">
+                         
+                        </i>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapseMarais3">
+                    <h4>Animaux de la zone :</h4>
+                    <ul class="fa-ul">
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/toucan.png">Le Toucan</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Cameleon.png">Le Caméléon</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Jaguar.png">Le Jaguard</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Panthere_noire.png">La Panthère</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Pérroquets2.png">Les Pérroquets</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Tigre.png">Le Tigre</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/singe2.png">Le Singe Roux</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/Singe.png">Le Gorille</a>
+                      </li>
+
+                      <li>
+                        <span class="fa-li">
+                          <i class="fa-solid fa-paw"></i>
+                        </span>
+                        <a class="link-arc-dark-green" href="/images/jungle/singe2.png">Les singes</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
+      <!--</div>-->
+    </section>
+  </div> 
+   
+  
+
+  
+
+  
+
+  <!-- Contact et Avis bloc 6-->
+  <section id="contact">
+            <div class="row bg-arc-mint-green">
+              <div class="col rect-upper-effect"></div>
+            </div>
+          
+            <div class="row bg-arc-dark pb-4">
+              <h2 class="text-light">Donnez votre avis</h2>
+              <p class="text-light">Vos avis comptent pour nous : partagez votre expérience.</p>
+                <div class="row g-0 text-center d-flex align-items-center">
+                  <div class="col-md-12 col-lg-3 text-light">
+                    <a class="btn btn-arc-mint-green mb-3 btn-lg" href="/review">
+                      <i class="bi bi-pencil-square text-light">
+                        
+                      </i>
+                        <p class="text-light">Écrivez nous</p>
+                    </a>
+          
+                    <ul class="list-inline my-2 fs-2 text">
+                      <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none text-light">
+                          <i class="bi bi-youtube">
+                            
+                          </i>
+                        </a>
+                      </li>
+          
+                      <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none text-light">
+                          <i class="bi bi-instagram">
+                            
+                          </i>
+                        </a>
+                      </li>
+          
+                      <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none text-light">
+                          <i class="bi bi-twitter">
+                            
+                          </i>
+                        </a>
+                      </li>
+          
+                      <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none text-light">
+                          <i class="bi bi-facebook">
+                            
+                          </i>
+                        </a>
+                      </li>
+                    </ul>       
+                  </div>
+          
+                  <div class="col-md-6 d-lg-none p-2">
+                    <div class="card">
+                      <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                        <i class="fa-regular fa-user"></i>
+                        <span>@Cmoi</span>
+                      </div>
+          
+                      <div class="card-body">
+                        <p class="card-text">
+                          "C'était une journée exceptionnelle dans un milieu naturel et respectueux de l'environnement. Nous reviendrons pour sûr !"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="d-none d-lg-flex col-lg-5">
+                    <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                              <i class="fa-regular fa-user"></i>
+                                <span>@Cmoi</span>
+                            </div>
+          
+                            <div class="card-body">
+                              <p class="card-text">
+                                "C'était une journée exceptionnelle dans un milieu naturel et respectueux de l'environnement. Nous reviendrons pour sûr !"
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                              <i class="fa-regular fa-user"></i>
+                              <span>@Cmoi</span>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">
+                                "C'était vraiment fun et les animaux ont l'air heureux dans ce zoo. Nous y retournerons si nous passons dans le coin. Bravo aux équipes."
+                              </p>
+                            </div>
+                          </div>                
+                        </div>
+          
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                              <i class="fa-regular fa-user"></i>
+                              <span>@Marc36</span>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">
+                                "Quelle journée incroyable au zoo ! Les animaux étaient si fascinants à observer, 
+                                et j'ai tellement appris sur la diversité de notre belle planète. C'était une expérience qui a vraiment égayé ma journée et renforcé mon amour pour la nature. #Gratitude #BelleJournée"
+                              </p>
+                            </div>
+                          </div>                
+                        </div>
+          
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                              <i class="fa-regular fa-user"></i>
+                              <span>@SimonC</span>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">
+                                "Je suis venu plusieurs fois et je ne m'en lasse pas. Toujours une expérience enrichissante."
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
+                              <i class="fa-regular fa-user"></i>
+                              <span>@Antoine123</span>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Je recommande vivement ce zoo ! La variété d'espèces est impressionnante."</p>                    
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6 col-lg-4 px-2">
+                    <h3 class="text-light">
+                      <i class="fa-regular fa-map">
+                        
+                      </i>
+                      Nous trouver
+                    </h3>
+                    <iframe id="map" title="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21350.095149620185!2d-2.2047636268920923!3d48.0183098730004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480faceab3587495%3A0xcdc883e818be2eb2!2sFor%C3%AAt%20de%20Broc%C3%A9liande!5e0!3m2!1sfr!2sfr!4v1728478508462!5m2!1sfr!2sfr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">carte</iframe>
+                  
+                    </iframe>
+          
+                  </div>
+          
+          
+                </div>
+          
+            </div>
+          
+  </section>
+
+
+
+
+
+
+
+Index 
+navbar
+  <!--fixed-top-->
+  <div>
+    
+        
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targeSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>t="#navbar
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="/">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/habitats" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Habitats
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/jungle">La Jungle de Mowgli</a></li>
+                  <li><a class="dropdown-item" href="/marais">Le Marais de Shrek</a></li>
+                  <li><a class="dropdown-item" href="/savane">La Savane De Simba</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/habitats">Tous les Habitats</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:zoo.arcadia@mail.com">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/connexion">Connexion Staff</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+Le footer
+
+
+    <footer id="footer" class="bg-primary text-white text-center ">
+      <div class="row-footer">
+        <div class="footer col-12 col-lg-4">
+          <h4 class="text-black">Nos horaires</h4>
+            <p> Hiver : Tous les jours de 10h à 18h</br>
+            Eté   : Tous les jours de  9h à 20h</p>
+        </div>
+
+        <div class="footer col-6 col-lg-4">
+          <h4 class="text-black">Où nous trouver</h4>
+          <p> 497, route des sables</br>
+           06050 Broceliandes</br>
+           Tel : 06.05.04.03.02</p>
+        </div>
+
+        <div class="footer col-6 col-lg-4">
+          <h4 class="text-black">Nous contacter</h4>
+          <p> contact@arcadia.com</p>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-tiktok"></i>
+        </div>
+      </div>
+            
+    </footer>

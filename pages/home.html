@@ -6,12 +6,14 @@
     </div>
   </div>
 
+  <div id="body">
+
   <!-- Le carrousel de présentation du zoo et de ses services   Bloc 1-->
 <div class="container-lg mb-4 py-3">
   
   <div class="d-flex d-md-block justify-content-center">
     <section id="carousel" class="mt-md-2">
-      <div id="carouselCaptions" class="carousel slide">
+      <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -61,12 +63,12 @@
                           
         </div>
         
-          <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span  class="visually-hidden">Previous</span>
           </button>
    
-          <button id="next" class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span  class="visually-hidden">Next</span>
           </button>
@@ -78,18 +80,18 @@
 </div>
 
 <!-- Présentation du zoo   bloc 2 -->
-<section class="mt-3 bg-arc-mint-green">
+<section class="section row-bloc_2 bg-arc-mint-green">
   <div class="row">
     <div class="col rect-upper-effect"></div>
   </div>
 
   <div class="row text-center text-light">
-    <div class="col-md-12">
+    <div class="col-md-12 ">
       <div>
         <div class="gazelle-titre">
           <img src="/images/savane/gazelle1.png" class="gazelle1" alt="gazelle"><h1 class="gazelle-text text-light text-center pb-2">Bienvenue au Zoo d'Arcadia</h1><img src="/images/savane/gazelle1.png" class="gazelle1" alt="gazelle">
         </div>
-        <p class="welcome-gazelle">
+        <p class="accueil welcome-gazelle">
           Lieu magique où vous pourrez découvrir des animaux extraordinaires et vivre une expérience inoubliable.
           </br>Le directeur, José, c'est lancé dans cette aventure en 1960 décidant de créer un zoo pas comme les autres,un zoo le plus proche possible de la nature, 
           avec un air avangardiste d'écologie un zoo où les animaux vivent en liberté dans un environnement proche de leur habitat naturel. 
@@ -112,7 +114,7 @@
 </section>
 
 <!--la page "Habitat" Commune a toutes les pages-->
-<section id="habitat">
+<section id="habitat" class="section habitat ">
   <div class="row bg-arc-mint-green-light py-3">
     <h2>Explorer un habitat</h2>
     <section id="habitats">
@@ -120,7 +122,7 @@
         
         <div class="col-12 col-lg-4 pb-3">
           <div class="card card-habitat">
-            <img src="/images/Le_marais.png" class="card-img-top-animal z-0" alt="marais">
+            <img src="/images/Le_marais.jpg" class="card-img-top-animal z-0" alt="marais">
               <div class="card-img-overlay d-flex align-items-start justify-content-center">
                 <h5 class="card-title text-light z-1">
                   <a class="no-underline" href="/marais">Les Marais de Shrek</a>
@@ -211,7 +213,7 @@
         </div>
         <div class="col-12 col-lg-4 pb-3">
             <div class="card card-habitat">
-              <img src="/images/La_savane.png" class="card-img-top-animal z-0" alt="savane">
+              <img src="/images/La_savane.jpg" class="card-img-top-animal z-0" alt="savane">
                 <div class="card-img-overlay d-flex align-items-start justify-content-center">
                   <h5 class="card-title text-light z-1">
                     <a class="no-underline" href="/savane">La Savane de Simba</a>
@@ -303,7 +305,7 @@
         </div>
         <div class="col-12 col-lg-4 pb-3">
           <div class="card card-habitat">
-            <img src="/images/La_jungle.png" class="card-img-top-animal z-0" alt="jungle">
+            <img src="/images/La_jungle.jpg" class="card-img-top-animal z-0" alt="jungle">
               <div class="card-img-overlay d-flex align-items-start justify-content-center">
                 <h5 class="card-title text-light z-1">
                   <a class="no-underline" href="/jungle">La Jungle de Mowgli</a>
@@ -400,7 +402,7 @@
 </section>
 
 <!--le parc   bloc 4 -->
-<section id="facts">
+<section id="facts" class="section">
   <div class="row bg-arc-mint-green">
     <div class="col rect-upper-effect"></div>
   </div>
@@ -430,23 +432,24 @@
     </div>
   </div>
 
-  <div class="row-girafe text-center py-3 bg-arc-mint-green text-light">
+  <div class="row-girafe text-center bg-arc-mint-green text-light">
        <div>   
-        <img src="/images/girafes_enfants.jpeg" alt="girafes" class="img-top-animal-girafe">
-        <a class="text-light" >Nos Girafes.</a>
+        <img src="/images/famille girafe.jpg" alt="girafes" class="img-top-animal-girafe">
+        <p></p>
         </div>
-    <div class="col-md-4 py-3-girafe">
-      <div  class="bg-arc-mint-green-girafe rounded-5 rounded-top-0 h-100 p-3 text-arc-black justify-content-center d-flex flex-column align-items-center">
-        <h3 class="pb-3-girafe"></h3>
-          <h2 id="girafe" class="text-body">
-            
+    <div class="col-md-4 py-3-girafe ">
+      <div  class="bg-arc-mint-green-girafe  ">     
+          <h2 id="girafe" class=" text-body">
+          </br>
             La Girafe (Giraffa camelopardalis) </br>
             est une espèce de mammifères ongulés artiodactyles, du groupe des ruminants,</br>
             vivant dans les savanes africaines et répandue du Tchad jusqu'en Afrique du Sud.</br>     
             Son nom commun vient de l'arabe زرافة, zarāfah,</br>
             mais l'animal fut anciennement appelé camélopard, du latin camelopardus1,</br> 
             contraction de camelus (chameau) en raison du long cou et de pardus (léopard) </br>
-            en raison des taches recouvrant son corps.</br>
+            en raison des taches recouvrant son corps.
+          </br>
+          </br>
             
           </h2>
           <a href="/images/girafe.jpg" class="btn btn-arc-light text-light">Accéder à la page des girafes</a>
@@ -459,8 +462,8 @@
   </div>
 </section>
 
- <!-- Les services bloc 5-->
- <section id="services" class="bg-arc-mint-green-light">
+ <!-- Les services bloc 5 nos services-->
+ <section id="services" class="section bg-arc-mint-green-light">
   <div class="row-services bg-arc-mint-green-light py-3 text---bs-card-color">
     <h2>Nos services</h2>
       <p class="services-home" >
@@ -469,7 +472,7 @@
 
         <div class="row text-center align-items-center g-0 d-none d-lg-flex">
           <div class="col-lg-4 py-3">
-            <img src="/images/train.png" alt="Petit train" class="service-img">
+            <img src="/images/train.jpg" alt="Petit train" class="service-img">
               <h3 class="fw-normal">Petit train</h3>
           </div>
 
@@ -479,7 +482,7 @@
           </div>
 
           <div class="col-lg-4 py-3">
-            <img src="/images/restau.png" alt="Restauration" class="service-img">
+            <img src="/images/restau.jpg" alt="Restauration" class="service-img">
             <h3 class="fw-normal">Restauration</h3>
           </div>
         </div>
@@ -494,7 +497,7 @@
 
 
 <!-- Les avis, contact et map -->
-<section id="contact">
+<section id="contact" class="section avis">
 
   <div class="row bg-arc-mint-green pb-4">
         <h2 class="text-light">Donnez votre avis</h2>
@@ -518,7 +521,7 @@
               </ul>
           </div>
           
-          <div class="col-md-6 d-lg-none p-2">
+          <div class="carousel-item ">
               <div class="card">
                   <div class="card-header bg-arc-primary text-light d-flex justify-content-between align-items-center">
                     <i class="bi bi-person-circle"></i>
@@ -605,7 +608,13 @@
   
 </section>
 
+<section id="welcome" class="section habitat">    
 
-<!--<div class="container my-md-4 py-3">-->
+  <div class="row habitats-presentation text-center pt-3 bg-arc-mint-green-light text-light">
+    <a class="btn btn-primary btn-services " href="/">haut de la page cliquez -->ici<-- </a>    
+      <h1 class="text-light text-center pb-2"></h1>                        
+  </div>  
+</section>
+
             
 </div>
