@@ -4,7 +4,7 @@ import Route from "./Route.js";
 export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html", []),
     new Route("/services", "Services", "/pages/services.html", []),
-    new Route("/avis", "Avis", "/pages/avis.html", []),
+    new Route("/avis", "Avis", "/pages/avis.php", []),
     new Route("/jungle", "Jungle", "/pages/jungle/jungle.html", []),
     new Route("/cameleon", "Cameleons", "/pages/jungle/cameleon.html", []),
     new Route("/gorille", "Gorilles", "/pages/jungle/gorille.html", []),
@@ -37,15 +37,15 @@ export const allRoutes = [
     new Route("/zebres", "Zebres", "/pages/savane/zebres.html", []),
     new Route("/habitats", "Habitats", "/pages/habitats.html", []),
     new Route("/contact", "Contact", "/pages/contact.html", []),
-    new Route("/connexion", "Connexion", "/pages/connexion.html", ["disconnected"], "/js/auth/signin.js"),             
-    new Route("/gestionH", "habitats", "/pages/staff/gestion_habitat.html", ["admin"]),
-    new Route("/editA", "animaux", "/pages/staff/edit_animal.html", ["admin", "employe", "veterinaire"]),
-    new Route("/admin", "admin", "/pages/staff/admin.html", ["admin"]), 
-    new Route("/sante", "sante", "/pages/staff/sante.html", ["admin", "veterinaire"]),
-    new Route("/employe", "employe", "/pages/staff/employe.html", ["admin", "employe"]),
-    new Route("/gestionE", "employe", "/pages/staff/gestion_employe.html", ["admin"]),
-    new Route("/gestionS", "services", "/pages/staff/gestion_service.html", ["admin"]),
-    new Route("/gestionA", "animaux", "/pages/staff/gestion_animal.html", ["admin"]),    
+    new Route("/connexion", "Connexion", "/pages/connexion.php", ["disconnected"], "/js/auth/signin.js"),             
+    new Route("/gestionH", "habitats", "/pages/staff/gestion_habitat.php", ["admin"]),
+    new Route("/editA", "animaux", "/pages/staff/edit_animal.php", ["admin", "employe", "veterinaire"]),
+    new Route("/admin", "admin", "/pages/staff/admin.php", ["admin"]), 
+    new Route("/sante", "sante", "/pages/staff/sante.php", ["admin", "veterinaire"]),
+    new Route("/employe", "employe", "/pages/staff/employe.php", ["admin", "employe"]),
+    new Route("/gestionE", "employe", "/pages/staff/gestion_employe.php", ["admin"]),
+    new Route("/gestionS", "services", "/pages/staff/gestion_service.php", ["admin"]),
+    new Route("/gestionA", "animaux", "/pages/staff/gestion_animal.php", ["admin"]),    
    
 ];
 

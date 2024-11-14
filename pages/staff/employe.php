@@ -1,3 +1,20 @@
+<?php
+session_start();
+include 'session_check.php';
+
+$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
+$dbname = 'zoo-arcadia-2025_zoo';
+$username = '383336';
+$password =  '@Admin2025';
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if($conn->connect_error) {
+    die("erreur de connexion: " .$conn->connect_error);
+}
+
+?>
+
 <div class="hero-scene text-center">
     <div class="hero-scene-content">
       <h1> Bienvenue au Zoo Arcadia</h1>
@@ -5,7 +22,8 @@
       <div><a href="/" class="btn btn-primary">Retour a l'accueil</a></div>
     </div>
 </div>
-<section class="mt-3 bg-arc-mint-green"></section>
+
+
     <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/employe">Employe Dashboard</a>
@@ -26,6 +44,10 @@
             </div>
     </nav>
 
+
+<div id="body">
+
+
 <div>
     <section id="employe" class="section "> 
         <section class="mt-3 bg-arc-mint-green">
@@ -36,7 +58,8 @@
                       <div class="gazelle-titre">
                           <img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle"><h1 class="gazelle-text text-light text-center pb-2">Espace Employé</h1><img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle">
                       </div>
-                      <h3>Bienvenue dans votre espace. </h3>
+                      <h3>Bienvenue dans votre espace.</h3>
+
                       <p class="accueil welcome-gazelle">
                       celui-ci vous est réservé. </br>
                       Nous souhaitons constituer une équipe d'employés dévoués pour travailler en étroite collaboration avec nos vétérinaires. 
@@ -146,7 +169,7 @@
 
 <div class="row bg-arc-mint-green-light-staff py-3">
     <header class="bg-primary text-white text-center py-3">
-        <h1>Bienvenue, Employé de l'habitat <?php echo $_SESSION['habitat']; ?>!</h1>
+        <h1>Bienvenue, Employé de l'habitat !</h1>
     </header>
     <main class="container mt-4">
         <section>

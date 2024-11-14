@@ -1,0 +1,44 @@
+page connexion.php :
+
+$conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net","383336", "@Admin2025", "zoo-arcadia-2025_zoo");
+//$conn = new mysqli($servername, $username, $password, $dbname);
+
+if($conn->connect_error) {
+    die("Erreur de connexion: " .$conn->connect_error);
+}
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+    $stmt->bind_param("ss", $username, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    //if($result->num_rows > 0) {
+    //    $_SESSION["username"] = $username;
+    //    header("Location:home.html");
+    //} else {
+    //    echo "Nom d'utilisateur ou mot de passe incorrect";
+    //}
+
+       if ($user) {
+            $_SESSION["username"] = $user['username'];
+            $_SESSION["role"] = $user['role'];
+            $_SESSION["habitat"] = $user['habitat'];
+
+            if ($user["role"] === "admin") {
+                header("Location: admin.php");
+                exit();
+            } elseif ($user["role"] === "veto") {
+                header("Location: sante.php");
+                exit();
+            } elseif ($user["role"] === "employe") {
+                header("Location: employe.php");
+                exit();
+            } else {
+                echo "Réservé au staff du zoo, demandez vos identifiants à l'administration";
+            }
+        } else {
+            echo "Champs vide non autorisés";
+        }

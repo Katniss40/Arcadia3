@@ -12012,64 +12012,20 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 .footer-clean {
-  padding: 14px 20px 0 20px;
   background-color: #0b4107;
   color: white;
 }
 
-.footer-clean h3, .footer-clean .h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 16px;
+.row-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-clean ul {
-  padding: 0;
-  list-style: none;
-  line-height: 1.6;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.footer-clean ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer-clean ul a:hover {
-  opacity: 1;
-}
-
-.footer-clean .item.social {
-  text-align: center;
-}
-
-.footer-clean .item.social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin-left: 10px;
-  margin-top: 22px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer-clean .item.social > a:hover {
-  opacity: 0.5;
-}
-
-.footer-clean .copyright {
-  margin-top: 14px;
-  margin-bottom: 0;
-  font-size: 13px;
-  opacity: 0.6;
+.horaires {
+  margin: 0 0 0 0;
 }
 
 /* Mise en place de la page 404 */
@@ -12093,8 +12049,10 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   width: 100%;
   height: 100%;
   background-image: url(/images/animaux_ia7.jpg);
-  background-size: cover;
   opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-scene * {
   /* positionner les éléments devant le before*/
@@ -12109,6 +12067,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   align-content: space-around;
   justify-content: center;
   align-items: center;
+}
+
+#body {
+  margin-left: 5.5rem !important;
+  margin-right: 5.5rem !important;
 }
 
 .py-3 {
@@ -12134,20 +12097,18 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 3px;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 
 .bg-arc-mint-green-light {
   background-color: rgba(209, 248, 206, 0.7333333333);
-  margin-right: 5.5rem;
-  margin-left: 5.5rem;
 }
 
 .bg-arc-mint-green {
   background-color: #0b4107;
-  margin-right: 5.5rem;
-  margin-left: 5.5rem;
 }
 
 .no-underline {
@@ -12270,9 +12231,17 @@ button {
   border-radius: 20px;
 }
 
-.section {
-  margin-left: 180px !important;
-  margin-right: 180px !important;
+#carrousel_avis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-success {
+  background-color: rgba(209, 248, 206, 0.7333333333);
 }
 
 .avis {
@@ -12281,16 +12250,6 @@ button {
 
 .habitat {
   background-color: rgba(209, 248, 206, 0.7333333333);
-}
-
-.section-connexion {
-  margin-right: -180px;
-  margin-left: -180px;
-}
-
-.accueil {
-  margin-left: 90px;
-  margin-right: 90px;
 }
 
 /*Pages Habitats et bloc 3 de la Home page -- bloc 1 de la page contact*/
@@ -12328,11 +12287,6 @@ button {
   float: right;
 }
 
-.promo {
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
 .services-home {
   text-align: center;
 }
@@ -12351,8 +12305,15 @@ button {
   background-color: #0b4107;
 }
 
+.row-bloc_2 {
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
 .row-promo {
   display: flex;
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
 }
 
 .row-girafe {
@@ -12362,6 +12323,17 @@ button {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
+.services-3 {
+  padding-bottom: 1rem !important;
+}
+
+#services {
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
 }
 
 .img-top-animal-girafe {
@@ -12372,16 +12344,12 @@ button {
   width: 100%;
   max-height: 500px;
   align-items: center;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 #girafe {
   font-size: 18px;
   background-color: rgba(209, 248, 206, 0.7333333333);
   border-radius: 10px 28px 10px 72px;
-  margin-right: -5px;
-  margin-left: -5px;
 }
 
 img, svg {
@@ -12434,11 +12402,6 @@ img, svg {
   border-radius: 5%;
 }
 
-#habitat_Part {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .habitats {
   color: #044d29;
   font-size: 45px;
@@ -12448,8 +12411,6 @@ img, svg {
 #service {
   margin-top: 20px;
   text-align: center;
-  margin-left: 420px;
-  margin-top: 15px;
 }
 
 .services {
@@ -12458,25 +12419,13 @@ img, svg {
   flex-direction: column;
 }
 
-.contact {
-  margin-left: 5.5rem;
-  margin-right: 5.5rem;
-}
-
 .souvenir {
   display: flex;
   justify-content: flex-start;
 }
 
-.habitats-presentation {
-  margin-left: 5.5rem;
-  margin-right: 5.5rem;
-}
-
 .habitat-marais {
   background-color: rgba(209, 248, 206, 0.7333333333);
-  margin-right: -23.3rem;
-  margin-left: -23.3rem;
 }
 
 .img-habitat-marais {
@@ -12489,8 +12438,6 @@ img, svg {
 }
 
 .contact-lion {
-  margin-left: 5rem;
-  margin-right: 5rem;
   font-size: 24px;
 }
 
@@ -12515,8 +12462,6 @@ img, svg {
 
 .bg-arc-mint-green-light-staff {
   background-color: rgba(209, 248, 206, 0.7333333333);
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .card-header {
@@ -12527,8 +12472,4 @@ img, svg {
 .card-footer {
   background-color: #0b4107;
   color: white;
-}
-
-#carrousel_avis {
-  margin-left: 37rem;
 }/*# sourceMappingURL=main.css.map */

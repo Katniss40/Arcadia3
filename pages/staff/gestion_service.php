@@ -1,40 +1,59 @@
+<?php
+session_start();
+include 'session_check.php';
+
+$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
+$dbname = 'zoo-arcadia-2025_zoo';
+$username = '383336';
+$password =  '@Admin2025';
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if($conn->connect_error) {
+    die("erreur de connexion: " .$conn->connect_error);
+}
+?>
+
 <div class="hero-scene text-center">
     <div class="hero-scene-content">
       <h1> Bienvenue au Zoo Arcadia</h1>
       <h4 class="contact"></h4>
-      <div><a href="/" class="btn btn-primary">Espace Administrateur</a></div>
+      <div><a href="/" class="btn btn-primary">Espace Administrateur/services</a></div>
     </div>
 </div>
 
 
-<section id="admin" class="section ">
-    
-
-<section class="mt-3 bg-arc-mint-green"></section>
-    <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/admin">Admin Dashboard</a>
+<nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/admin">Admin Dashboard</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gestionS">Gérer les services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gestionE">Gérer les employés</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gestionA">Gérer les animaux</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gestionH">Gérer les habitats</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gestionS">Gérer les services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gestionE">Gérer les employés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gestionA">Gérer les animaux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gestionH">Gérer les habitats</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+
+
+<div id="body">
+
+<section id="admin" class="section">
+    
           
 
 
@@ -94,4 +113,4 @@
 
 </section>
         
-        
+</div>        

@@ -1,3 +1,27 @@
+<?php
+session_start();
+include 'session_check.php';
+
+$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
+$dbname = 'zoo-arcadia-2025_zoo';
+$username = '383336';
+$password =  '@Admin2025';
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if($conn->connect_error) {
+    die("erreur de connexion: " .$conn->connect_error);
+}
+
+$sql_animaux = "SELECT * FROM animaux";
+$result_animaux = $conn->query($sql_animaux);
+
+$sql_habitats = "SELECT * FROM habitats";
+$result_habitats = $conn->query($sql_habitats);
+?>
+
+
+
 <div class="hero-scene text-center">
     <div class="hero-scene-content">
       <h1> Bienvenue au Zoo Arcadia</h1>
@@ -6,7 +30,7 @@
     </div>
 </div>
 
-<section class="mt-3 bg-arc-mint-green"></section>
+
     <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/sante">Vétérinaire Dashboard</a>
@@ -27,11 +51,13 @@
             </div>
         </nav>
 
+<div id="body">
+
 <section id="veterinaire" class="section "> 
 
     <section class="mt-3 bg-arc-mint-green">
             
-    <!-- Bloc 1 contact-->
+    
           <div class="row text-center text-light">
               <div class="col-md-12">
                   <div>
@@ -73,11 +99,11 @@
       
     <div class="form-group">
         <label for="id">Id animal</label>
-        <input type="text" id="Id-animal"  class="form-control" name="id" required></input>
+        <input type="text" id="Id"  class="form-control" name="id" required></input>
     </div>
     <div class="form-group">
       <label for="nom">Nom</label>
-      <input type="text" class="form-control" name="Nom" required></input>
+      <input type="text" id="name" class="form-control" name="Nom" required></input>
     </div> 
     <div class="form-group">
       <label for="sante">Santé</label>
@@ -85,7 +111,7 @@
     </div>
     <div class="form-group">
       <label for="nourriture">Nourriture conseillée</label>
-      <textarea type="text" class="form-control" name="nourriture" required></textarea>
+      <textarea type="text" id="nourriture" class="form-control" name="nourriture" required></textarea>
     </div>
     <div class="form-group">
       <label for="visite">dernière visite</label>
@@ -99,7 +125,7 @@
       <button type="button"  class="btn btn-primary" id="btn-rapport-sante">Envoyer</button>
   </form>
 </div>
-<!-- Modal edition -->
+
 <div class="modal fade" id="EditionHabitatModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
@@ -128,8 +154,10 @@
 
 <div class="ali-grid">
 
-
 </div>
+
+
+
 <br>
 <br>
 </section> 
@@ -154,6 +182,26 @@
             <th>Commentaire santé</th>
             <th>Commentaire privé</th>
         </tr>
+
+        <?php
+        if($result_animaux->num_rows > 0) {
+            while($row = $result_animaux->fetch_assoc()) {
+                echo "<tr>
+                <td>{$row['id']}</td>
+                <td>{$row['nom']}</td>
+                <td>{$row['habitat']}</td>
+                <td>{$row['espece']}</td>
+                <td>{$row['age']}</td>
+                <td>{$row['poids']}</td>
+                <td>{$row['nourriture']}</td>
+                <td>{$row['commentaires']}</td>
+                <td>{$row['remarques']}</td>
+                </tr>";
+            }
+        } else {
+            echo "<tr><td colspan='5'>Aucun animal trouvé</td></tr>";
+        }
+        ?>
         
     </table>
 
@@ -163,7 +211,22 @@
             <th>ID</th>
             <th>Type d'habitat</th>
         </tr>
+        <?php
+        if($result_habitats->num_rows > 0) {
+            while($row = $result_habitats->fetch_assoc()) {
+                echo "<tr>
+                <td>{$row['id']}</td>
+                <td>{$row['nom']}</td>
+                </tr>";
+            }
+        }else {
+            echo "<tr><td colspan='5'>Aucun habitat trouvé</td></tr>";
+        }
+        ?>
         
     </table>
+    <?php
+    $conn->close();
+    ?>
 
 </div>    

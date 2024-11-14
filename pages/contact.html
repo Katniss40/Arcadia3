@@ -1,3 +1,6 @@
+
+
+
 <div class="hero-scene text-center">
     <div class="hero-scene-content">
       <h1> Bienvenue au Zoo Arcadia</h1>
@@ -5,18 +8,21 @@
       <div><a href="/" class="btn btn-primary">Contact</a></div>
     </div>
 </div>
-  
-<div>
+
+<div id="body">  
+
     <section id="contact_top" class="section ">            
     
-        <section class="mt-3 bg-arc-mint-green">
+        <section class="row-bloc_2 mt-3 bg-arc-mint-green">
             
       <!-- Bloc 1 contact-->
-            <div class="row text-center text-light">
+            <div class=" text-center text-light">
                 <div class="col-md-12">
                     <div>
                         <div class="gazelle-titre">
-                            <img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle"><h1 class="gazelle-text text-light text-center pb-2">Contact</h1><img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle">
+                            <img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle"/>
+                            <h1 class="gazelle-text text-light text-center pb-2">Contact</h1>
+                            <img src="/images/savane/Lion_savane.jpg" class="gazelle1" alt="gazelle"/>
                         </div>
                             <p class="accueil welcome-gazelle">
                             Vous avez des questions sur notre zoo ou nos animaux ? </br>
@@ -33,15 +39,17 @@
                 <div class="col rect-lower-effect"></div>
             </div>
         
-        </section>       
+        </section>      
     
     </section>
-<!-- Bloc 2 Message-->
+<!--Bloc 2 Message-->
     <section id="yourMessage" class="section">
         <div class="row bg-arc-mint-green-light py-3">
-            <h2 class="text-black"><i class="bi bi-pencil-square text-black"></i> Votre message</h2>
+            <h2 class="text-black">
+                <i class="bi bi-pencil-square text-black">
+                </i> Votre message</h2>
 
-            <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php">
+            <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php" id="formContact">
                 <div class="mb-3">
                     <input type="hidden" name="csrf_token" value="6f9b48310e9b0d6d73d056f74a1dfb975e7b6bbb10b3aa09fa1deb9a0dda46be">
                     <label for="contactTitle" class="form-label text-black">Titre du message :</label>
@@ -56,13 +64,96 @@
                     <input required type="email" class="form-control " id="contactEmail" name="contactEmail" placeholder="ex : moi@email.com">
                 </div>
                 
-                <input class="btn btn-primary text-light" name="ContactForm" type="submit" value="Envoyer ce message"></input>
+                <input class="btn btn-primary text-light" name="ContactForm" type="submit" value="Envoyer ce message" id="btnContact"></input>
 
             </form>
         </div>
     </section>
+
 </div>
 
+<script>
+        const canvas = document.getElementById('bubbleCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        const bubbles = [];
+        
+        function randomNeonColor() {
+            const colors = ['#af984c', '#471d09','#dada0c','#00aeff','', '#48ff00','#00ffd5','','#7a00ff',];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+        
+        function createBubble() {
+            const bubble = {
+                x: Math.random() * canvas.width,
+                y: canvas.height + Math.random() * 100,
+                radius: Math.random() * 1 + 1,
+                speed: Math.random() * 1 + 0.5,
+                oscillationAmplitude: Math.random() * 10 + 10,
+                oscillationSpeed: Math.random() * 0.02 + 0.01,
+                offset: Math.random() * Math.PI * 2,
+                color: randomNeonColor()
+            };
+            bubbles.push(bubble);
+        }
+        
+        function drawBubble(bubble) {
+            ctx.beginPath();
+            const oscillation = Math.sin(bubble.y * bubble.oscillationSpeed + bubble.offset) * bubble.oscillationAmplitude;
+            ctx.arc(bubble.x + oscillation, bubble.y, bubble.radius, 0, Math.PI * 2);
+            ctx.fillStyle = bubble.color;
+            ctx.fill();
+            ctx.closePath();
+        }
+        
+        function updateBubbles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+            for (let i = 0; i < bubbles.length; i++) {
+                const bubble = bubbles[i];
+                bubble.y -= bubble.speed;
+        
+                if (bubble.y + bubble.radius < 0) {
+                    bubbles.splice(i, 1);
+                    i--;
+                } else {
+                    drawBubble(bubble);
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                    createBubble();
+            }
+        
+            requestAnimationFrame(updateBubbles);
+            console.log(bubbles.length)
+        }
+        
+        updateBubbles();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.rating-star');
+            const noteInput = document.getElementById('note');
 
-            
-    
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    noteInput.value = rating;
+
+                    stars.forEach(s => s.classList.remove('selected'));
+                    this.classList.add('selected');
+                    for (let i = 0; i < rating; i++) {
+                        stars[i].classList.add('selected');
+                    }
+                });
+            });
+        });
+    </script>

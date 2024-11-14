@@ -13,7 +13,7 @@ const getRouteByUrl = (url) => {
       currentRoute = element;
     }
   });
-  // Si aucune correspondance n'est trouvée, on retourne la route 404
+  // Si aucune correspondance n'est pas trouvée, on retourne la route 404
   if (currentRoute != null) {
     return currentRoute;
   } else {
@@ -60,6 +60,8 @@ const LoadContentPage = async () => {
     // Ajout de la balise script au corps du document
     document.querySelector("body").appendChild(scriptTag);
   }
+
+  
 
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;

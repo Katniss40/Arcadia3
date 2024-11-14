@@ -1,3 +1,23 @@
+<?php
+session_start();
+include 'session_check.php';
+
+$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
+$username = '383336';
+$password =  '@Admin2025';
+$dbname = 'zoo-arcadia-2025_zoo';
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if($conn->connect_error) {
+    die("erreur de connexion: " .$conn->connect_error);
+}
+
+?>
+
+
+
+
 <div class="hero-scene text-center">
     <div class="hero-scene-content">
       <h1> Bienvenue au Zoo Arcadia</h1>
@@ -6,9 +26,8 @@
     </div>
 </div>
 
-<section id="admin" class="section ">
-    <section class="mt-3 bg-arc-mint-green"></section>
-    <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
+
+<nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/admin">Admin Dashboard</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +51,20 @@
                 </div>
             </div>
         </nav>
+
+
+
+<div id="body">
+
+<section id="admin" class="section ">
+    
     
 <div class="row bg-arc-mint-green-light-staff py-3">
     <div class="dashboard">
             <div class="column column-1">
                 <h2>Bienvenue sur votre tableau de bord</h2>
                     <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à nos utilisateurs inscrits.</p>
-            
+
                     <div id="employees" class="card">
                         <div class="card-header bg-arc-mint-green text-light">
                             Gestion des employés
@@ -61,18 +87,7 @@
                     </div>
                     <br><br>
                         
-                    <div id="weather" class="card">
-                        <div class="card-header bg-arc-mint-green text-light">
-                            Météo en temps réel sur le zoo
-                        </div>
-                        <div class="card-body">
-                            <img id="weather-icon" src="" alt="Icône météo" style="width: 50px; height: 50px;">
-                            <p id="weather-description">Chargement...</p>
-                            <p id="temperature"></p>
-                            <p id="humidity"></p>
-                        </div>
-                    </div>
-                    <br><br>
+                    
             
                     <div id="habitats" class="card">
                         <div class="card-header bg-arc-mint-green text-light">
@@ -85,7 +100,7 @@
                     </div>
                     <br><br>
                     
-                    <div id="animals" class="card">
+                    <div id="animaux" class="card">
                         <div class="card-header bg-arc-mint-green text-light">
                             Gestion des animaux
                         </div>
@@ -98,12 +113,12 @@
         </div>
 
         <div class="column column-2">
-                    
-                    
+
+
             <div class="main-content p-3 bg-arc-mint-green text-light shadow-sm">
             <h2>Chat avec l'équipe.</h2>
                 <div class="chat-container p-3 bg-light text-primary rounded shadow-sm ">
-                
+
                     <div class="chat-message sent d-flex align-items-start mb-3">
                         <div class="avatar mr-2"><i class="fas fa-user icon-bounce"></i></div>
                         <div class="chat-message sent">
@@ -126,26 +141,9 @@
                             <button type="submit" class="btn btn-outline-light me-2">Envoyer</button>
                         </form>
                     </div>
-                
-                <div class="main-content p-3 bg-primary text-light shadow-sm mt-4">
-                <h2>Demandes d'inscription</h2>
-                
-                </div>
+
             </div>
-        
-
-        <div class="column column-3">
-            <div class="main-content">
-                <div class="container">
-                    <h2>Nombre de Likes</h2>
-                        <p>Nombre total de likes:</p>
-                            
-                        
-
         </div>
-    </div>
-        </div>
+    </section>
+
 </div>
-</section>
-   
-
