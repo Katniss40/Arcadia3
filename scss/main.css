@@ -12483,4 +12483,8 @@ img, svg {
 .card-footer {
   background-color: #0b4107;
   color: white;
+}
+
+.card {
+  max-width: 40rem;
 }/*# sourceMappingURL=main.css.map */

@@ -363,8 +363,6 @@ button {
   float: right;
 }
 
-
-
 .services-home {
   text-align: center;
 }
@@ -485,8 +483,6 @@ img, svg {
   border-radius: 5%;
 }
 
-
-
 .habitats {
   color: #044d29;
 
@@ -506,12 +502,10 @@ img, svg {
   flex-direction: column;
 }
 
-
 .souvenir {
   display: flex;
   justify-content: flex-start;
 }
-
 
 .habitat-marais {
     background-color: rgba(209, 248, 206, 0.7333333333);
@@ -567,4 +561,6 @@ margin-top: -16px;
   color: white;
 }
 
-
+.card {
+  max-width: 40rem;
+}
