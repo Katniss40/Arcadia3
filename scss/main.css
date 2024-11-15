@@ -12418,6 +12418,12 @@ img, svg {
   font-size: 45px;
 }
 
+.p-habitats {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
 /* Page services */
 #service {
   margin-top: 20px;
@@ -12487,4 +12493,35 @@ img, svg {
 
 .card {
   max-width: 40rem;
+}
+
+.admin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-habitats {
+  display: flex;
+}
+
+.card-services {
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
+.card-employe {
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
+.card-employe .form-group .card-body .card-services .card-habitat {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.card-habitat {
+  margin-right: 20rem;
+  margin-left: 20rem;
 }/*# sourceMappingURL=main.css.map */

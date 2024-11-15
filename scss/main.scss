@@ -485,8 +485,13 @@ img, svg {
 
 .habitats {
   color: #044d29;
-
   font-size: 45px;
+}
+
+.p-habitats {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 /* Page services */
@@ -563,4 +568,39 @@ margin-top: -16px;
 
 .card {
   max-width: 40rem;
+}
+
+
+// Admin
+
+.admin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-habitats {
+  display: flex;
+}
+
+.card-services {
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
+.card-employe{
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
+.card-employe .form-group .card-body .card-services .card-habitat{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  
+}
+
+.card-habitat {
+  margin-right: 20rem;
+  margin-left: 20rem;
 }

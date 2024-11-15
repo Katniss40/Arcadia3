@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 include 'db_connexion.php';
 
 
@@ -11,6 +11,8 @@ if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
 echo "Connexion réussi!";
+
+*/
 ?>
 
 <div class="hero-scene text-center">
@@ -49,69 +51,79 @@ echo "Connexion réussi!";
 
 <div id="body">
 
-<section id="admin" class="section ">
-    
-
+<section id="admin" class="section ">  
 
   
 <div class="row bg-arc-mint-green-light-staff py-3">
-        <div class="container mt-5">
-            <h2>Gestion des habitats</h2>
-            <div class="card mt-3">
-                <div class="card-header">
-                    Ajouter un nouvel habitat
-                </div>
-                <div class="card-body">
-                    <form action="manage_habitats.php" method="POST">
-                        <div class="form-group">
-                            <label for="habitat_name">Nom de l'habitat</label>
-                            <input type="text" class="form-control" id="habitat_name" name="habitat_name" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
-                    </form>
-                </div>
-            </div>
+    <div class="dashboard">
+        <div class="column column-1">
+            <h2>Bienvenue sur votre tableau de bord de gestion des habitats</h2>
+            <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à l'administration du Zoo.</p>
 
-            <div class="card mt-3">
-                <div class="card-header">
-                    Modifier un habitat
-                </div>
-                <div class="card-body">
-                    <form action="manage_habitats.php" method="POST">
-                        <div class="form-group">
-                            <label for="habitat_name">Ancien nom de l'habitat</label>
-                            <input type="text" class="form-control" id="habitat_old" name="habitat_name" required>
-                            <label for="habitat_name">Nouveau nom de l'habitat</label>
-                            <input type="text" class="form-control" id="habitat_new" name="habitat_name" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Mettre à jour</button>
-                    </form>
-                </div>
-            </div>
 
-            <div class="card mt-3">
-                <div class="card-header">
-                    Liste des habitats
+            <div class="card-habitat">
+            <div id="employees">
+            <div class="card-header bg-arc-mint-green text-light">
+                                Ajouter un nouvel habitat
+                            </div>
+
+                    <div class="card-body">
+                        <form action="/gestionH" method="POST">
+                            <div class="form-group">
+                                <label for="habitat_name">Nom de l'habitat</label>
+                                <input type="text" class="form-control" id="habitat_name" name="habitat_name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </form>
+                    </div>
+            </div>
+<br>
+<br>
+            <div id="employees">
+            <div class="card-header bg-arc-mint-green text-light">
+                        Modifier un habitat
+                    </div>
+                    <div class="card-body">
+                    <form action="/gestionH" method="POST">
+                            <div class="form-group">
+                                <label for="habitat_name">Ancien nom de l'habitat</label>
+                                <input type="text" class="form-control" id="habitat_old" name="habitat_name" required>
+                                <label for="habitat_name">Nouveau nom de l'habitat</label>
+                                <input type="text" class="form-control" id="habitat_new" name="habitat_name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
+
+<br>
+<div class="row bg-arc-mint-green-light-staff py-3">
+
+<div class="card-list-employe mt-3">
+                    <div class="card-header">
+                        Liste des habitats
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
                             <tr>
                                 <th>ID</th>
                                 <th>Nom de l'habitat</th>
                                 <th>Actions</th>
                             </tr>
-                        </thead>
-                        <tbody>
-                            
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
+
         </div>
         
 </div> 
-
+</div>
 
  </section>  
  

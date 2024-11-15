@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 include 'db_connexion.php';
 
 
@@ -11,6 +11,7 @@ if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
 echo "Connexion réussi!";
+*/
 ?>
 
 <div class="hero-scene text-center">
@@ -51,65 +52,62 @@ echo "Connexion réussi!";
 
 <div id="body">
 
-<section id="admin" class="section">
-    
-          
+    <section id="admin" class="section ">
 
+        <div class="row bg-arc-mint-green-light-staff py-3">
+            <div class="dashboard">
+                <div class="column column-1">
+                    <h2>Bienvenue sur votre tableau de bord de gestion des services</h2>
+                    <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à l'administration du Zoo.</p>
 
-    <div class="row bg-arc-mint-green-light-staff py-3">
-        <div class="container mt-5">
-            <h2>Gestion des services</h2>
-                <div class="card mt-3">
-                    <div class="card-header">
-                        Ajouter un nouveau service
-                    </div>
-                    <div class="card-body">
-                        <form action="/gestionS" method="POST">
-                        <div class="form-group">
-                            <label for="service_name">Nom du service</label>
-                                <input type="text" class="form-control" id="service_name" name="service_name" required>
+                    <div class="card-services">
+                        <div id="employees">
+                            <div class="card-header bg-arc-mint-green text-light">
+                                Ajouter un nouveau services
+                            </div>
+
+                            <div class="card-body">
+                                <form action="/gestionS" method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Nom du service</label>
+                                        <input type="text" class="form-control" id="service_name" name="service_name"  required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                                </form>
+                            </div>
                         </div>
-                            <button type="submit" class="btn btn-primary">Ajouter</button>
-                        </form>
+                          <br>
+                        <br>
                     </div>
                 </div>
-
-        <div class="card mt-3">
-            <div class="card-header">
-                Modifier un service
-            </div>
-            <div class="card-body">
-                <form action="/gestionS" method="POST">
-                    <div class="form-group">
-                        <label for="service_name">Nom du service</label>
-                            <input type="text" class="form-control" id="service_name" name="service_name" required>
-                    </div>
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
-                </form>
             </div>
         </div>
+    </section>
+    <section>
 
-        <div class="card mt-3">
-            <div class="card-header">
-                Liste des services
-            </div>
-            <div class="card-body">
-                <table class="table table-bordered">
-                    <thead>
+        <div class="row bg-arc-mint-green-light-staff py-3">
+
+            <div class="card-list-employe mt-3">
+                <div class="card-header bg-arc-mint-green text-light">
+                    Liste des services
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nom du service</th>
                             <th>Actions</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                            
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>            
 
-</section>
-        
-</div>        
+    </section>
+
+

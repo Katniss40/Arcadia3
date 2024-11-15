@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 include 'db_connexion.php';
 
 
@@ -52,6 +52,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $sql = "SELECT * FROM animaux";
 $result = $conn->query($sql);
+
+*/
 ?>
 
 
@@ -89,7 +91,11 @@ $result = $conn->query($sql);
                 </div>
             </div>
         </nav>
-        <div class="container mt-5">
+
+
+
+<section></section>
+        <div class="container mt-5 bg-arc-mint-green-light">
             <h2>Ajouter un nouvel animal</h2>
             <form action="manage_animals.php" method="POST">
                 <div class="row">
@@ -164,7 +170,7 @@ $result = $conn->query($sql);
         </div>
 
         <h1>Liste des Animaux</h1>
-        <table class="table table-striped">
+        <table class="table table-striped ">
             <thead>
                 <tr>
                     <th class="small-column">Nom</th>
@@ -181,8 +187,9 @@ $result = $conn->query($sql);
                 </tr>
             </thead>
             <tbody>
+</section>                
                 <?php
-
+/*
 
                 $conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net", "383336", "@Admin2025", "zoo-arcadia-2025_zoo");
 
@@ -215,7 +222,12 @@ $result = $conn->query($sql);
                     echo "<tr><td colspan='12'>Aucun animal trouvé.</td></tr>";
                 }
                 $conn->close();
+
+                */
                 ?>
             </tbody>
         </table>
+
+        <p></p>
+        <p></p>
         

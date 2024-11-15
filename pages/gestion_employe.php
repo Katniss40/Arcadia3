@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*;
 include 'db_connexion.php';
 
 
@@ -10,7 +10,7 @@ if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
 echo "Connexion réussi!";
-
+*/
 /*if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
@@ -85,133 +85,91 @@ $conn->close();*/
 
 <div id="body">
 
-<section id="admin" class="section ">  
+<section id="admin" class="section ">
 
-   
-<div class="row bg-arc-mint-green-light-staff py-3">
-        <div class="container mt-5">
-            <h2>Gestion des employés</h2>
-            <div class="card mt-3">
-                <div class="card-header">
-                    Ajouter un nouvel employé
-                </div>
-                <div class="card-body">
-                    <form action="/gestionE" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nom de l'employé</label>
-                            <input type="text" class="form-control" id="name" name="name" value="<?php echo htmlspecialchars($name ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Nom d'utilisateur</label>
-                            <input type="text" class="form-control" id="username" name="username" value="<?php echo htmlspecialchars($username ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Mot de passe</label>
-                            <input type="password" class="form-control" id="password" name="password" value="<?php echo htmlspecialchars($password ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="poste">Poste</label>
-                            <input type="text" class="form-control" id="poste" name="poste" value="<?php echo htmlspecialchars($poste ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">email</label>
-                            <input type="text" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="statut">Statut</label>
-                            <input type="text" class="form-control" id="statut" name="statut" value="<?php echo htmlspecialchars($statut ?? ''); ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="habitat">Habitat</label>
-                            <input type="text" class="form-control" id="habitat" name="habitat" value="<?php echo htmlspecialchars($habitat ?? ''); ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="role">Rôle</label>
-                            <select class="form-control" id="role" name="role" required>
-                                <option value="admin" <?php echo ($role == 'admin') ? 'selected' : ''; ?>>Admin</option>
-                                <option value="veterinaire" <?php echo ($role == 'veterinaire') ? 'selected' : ''; ?>>Vétérinaire</option>
-                                <option value="employe" <?php echo ($role == 'employé') ? 'selected' : ''; ?>>Employé</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="habitat">Habitat (pour les employés)</label>
-                            <select class="form-control" id="habitat" name="habitat">
-                                <option value="">Aucun</option>
-                                <option value="savane" <?php echo ($habitat == 'savane') ? 'selected' : ''; ?>>Savane</option>
-                                <option value="jungle" <?php echo ($habitat == 'jungle') ? 'selected' : ''; ?>>Jungle</option>
-                                <option value="marais" <?php echo ($habitat == 'marais') ? 'selected' : ''; ?>>Marais</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
-                    </form>
-                </div>
-            </div>
+    <div class="row bg-arc-mint-green-light-staff py-3">
+        <div class="dashboard">
+            <div class="column column-1">
+                <h2>Bienvenue sur votre tableau de bord de gestion des employés</h2>
+                <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à l'administration du Zoo.</p>
 
-            <div class="row bg-arc-mint-green-light-staff py-3">
-                <div class="container mt-5">       
-                    <div class="card mt-3">
-                        <div class="card-header">
-                            Modifier un employé
+                <div class="card-employe">
+                    <div id="employees">
+                        <div class="card-header bg-arc-mint-green text-light">
+                            Ajouter un nouvel employé
                         </div>
+
                         <div class="card-body">
                             <form action="/gestionE" method="POST">
                                 <div class="form-group">
                                     <label for="name">Nom de l'employé</label>
-                                    <input type="text" class="form-control" id="name" name="name" <?php echo htmlspecialchars($name ?? ''); ?>" required>
+                                    <input type="text" class="form-control" id="name" name="name" value="<?php /*echo htmlspecialchars($name ?? '');*/ ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="username">Nom d'utilisateur</label>
-                                    <input type="text" class="form-control" id="username" name="username" <?php echo htmlspecialchars($username ?? ''); ?>" required>
+                                    <input type="text" class="form-control" id="username" name="username" value="<?php /*echo htmlspecialchars($username ?? '');*/?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password" name="password" <?php echo htmlspecialchars($password ?? ''); ?>" required>
+                                    <input type="password" class="form-control" id="password" name="password" value="<?php /*echo htmlspecialchars($password ?? '');*/ ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="poste">Poste</label>
-                                    <input type="text" class="form-control" id="poste" name="poste" <?php echo htmlspecialchars($poste ?? ''); ?>" required>
+                                    <input type="text" class="form-control" id="poste" name="poste" value="<?php /*echo htmlspecialchars($poste ?? '');*/ ?>" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="position">email</label>
-                                    <input type="text" class="form-control" id="email" name="email" <?php echo htmlspecialchars($email ?? ''); ?>" required>
+                                    <label for="email">email</label>
+                                    <input type="text" class="form-control" id="email" name="email" value="<?php /*echo htmlspecialchars($email ?? ''); */?>" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="statut">statut</label>
-                                    <input type="text" class="form-control" id="statut" name="statut" <?php echo htmlspecialchars($statut ?? ''); ?>" required>
+                                    <label for="statut">Statut</label>
+                                    <input type="text" class="form-control" id="statut" name="statut" value="<?php /*echo htmlspecialchars($statut ?? ''); ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="habitat">Habitat</label>
+                            <input type="text" class="form-control" id="habitat" name="habitat" value="<?php echo htmlspecialchars($habitat ?? ''); */?>" required>
                                 </div>
-                                <div class="form-group">
-                                    <label for="habitat">Habitat</label>
-                                    <input type="text" class="form-control" id="habitat" name="habitat" <?php echo htmlspecialchars($habitat ?? ''); ?>" required>
-                                </div>
+
                                 <div class="form-group">
                                     <label for="role">Rôle</label>
                                     <select class="form-control" id="role" name="role" required>
-                                    <option value="admin" <?php echo ($role == 'admin') ? 'selected' : ''; ?>>Admin</option>
-                                <option value="veterinaire" <?php echo ($role == 'veterinaire') ? 'selected' : ''; ?>>Vétérinaire</option>
-                                <option value="employe" <?php echo ($role == 'employé') ? 'selected' : ''; ?>>Employé</option>
+                                        <option value="admin" <?php /*echo ($role == 'admin') ? 'selected' : '';*/ ?>>Admin</option>
+                                        <option value="veterinaire" <?php /*echo ($role == 'veterinaire') ? 'selected' : ''; */?>>Vétérinaire</option>
+                                        <option value="employe" <?php /*echo ($role == 'employé') ? 'selected' : '';*/ ?>>Employé</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="habitat">Habitat (pour les employés)</label>
                                     <select class="form-control" id="habitat" name="habitat">
                                         <option value="">Aucun</option>
-                                        <option value="savane" <?php echo ($habitat == 'savane') ? 'selected' : ''; ?>>Savane</option>
-                                        <option value="jungle" <?php echo ($habitat == 'jungle') ? 'selected' : ''; ?>>Jungle</option>
-                                        <option value="marais" <?php echo ($habitat == 'marais') ? 'selected' : ''; ?>>Marais</option>
+                                        <option value="savane" <?php /*echo ($habitat == 'savane') ? 'selected' : '';*/ ?>>Savane</option>
+                                        <option value="jungle" <?php /*echo ($habitat == 'jungle') ? 'selected' : '';*/ ?>>Jungle</option>
+                                        <option value="marais" <?php /*echo ($habitat == 'marais') ? 'selected' : '';*/ ?>>Marais</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Ajouter</button>
                             </form>
                         </div>
+
                     </div>
-            
-                    
+
+
+
+
+
                 </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section>
 
             <div class="row bg-arc-mint-green-light-staff py-3">
 
-            <div class="card mt-3">
+            <div class="card-list-employe mt-3">
                 <div class="card-header">
                     Liste des employés
                 </div>
@@ -236,12 +194,14 @@ $conn->close();*/
                 </div>
             </div>
             </div>
-        </div>
-</div>
 
-
+</section>
 
 </div>
+
+
+
+
 
 
 

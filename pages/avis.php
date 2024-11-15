@@ -1,7 +1,10 @@
+<?php
+// le php sera inséré ici
+
+?>
 
 
-
-<<div class="hero-scene text-center">
+<div class="hero-scene text-center">
   <div class="hero-scene-content">
     <h1> Bienvenue au Zoo Arcadia</h1>
     <h4>Connexion réservée exclusivement au personnel du zoo</h4>

@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 include 'db_connexion.php';
 
 
@@ -10,7 +10,7 @@ if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
 echo "Connexion réussi!";
-
+*/
 ?>
 
 <div class="hero-scene text-center">

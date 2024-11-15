@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 include 'db_connexion.php';
 
 $conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net", "383336", "@Admin2025", "zoo-arcadia-2025_zoo");
@@ -21,5 +21,5 @@ if(isset($_get['id'])) {
 
 header("location: gestion_animal.php");
 exit();
-$conn->close();
+$conn->close();*/
 ?>

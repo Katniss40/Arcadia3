@@ -8,6 +8,7 @@
 
   <div id="body">
 
+
   <!-- Le carrousel de présentation du zoo et de ses services   Bloc 1-->
 <div class="container-lg mb-4 py-3">
   
@@ -79,39 +80,39 @@
       
 </div>
 
+      <section id="welcome" class="mt-3 section">
+
+          <div class="row habitats-presentation text-center pt-3 bg-arc-mint-green-light text-black">
+
+              <h1 class="text-black text-center pb-2">Bienvenue au Zoo Arcadia</h1>
+
+          </div>
+      </section>
+
 <!-- Présentation du zoo   bloc 2 -->
-<section class="section row-bloc_2 bg-arc-mint-green">
-  <div class="row">
-    <div class="col rect-upper-effect"></div>
-  </div>
+      <section id="services_list" class="section">
+          <div class="row bg-arc-mint-green text-light mt-3">
+              <div class="offset-lg-1 col-lg-6">
+                  <div>
+                      <p>Lieu magique où vous pourrez découvrir des animaux extraordinaires et vivre une expérience inoubliable.
+                          Le directeur, José, c'est lancé dans cette aventure en 1960 décidant de créer un zoo pas comme les autres,un zoo le plus proche possible de la nature,
+                          avec un air avangardiste d'écologie un zoo où les animaux vivent en liberté dans un environnement proche de leur habitat naturel.
+                          Encadré par des vétérinaires expérimentés, les animaux sont chouchoutés et soignés avec amour. Il a choisit de s'installer dans la forêt de Brocéliande,
+                          forêt mythique et enchantée citée dans plusieurs texte liés pour certain à la légende du roi Arthur. Vous découvrirez, au détour des chemins,
+                          La légende de Merlin l'enchanteur, et des chevaliers de la table ronde. Au fil de la visite, une expérience immersive vous attends.
+                          Vous pourrez vous promener avec le petit train, ou encore vous perdre dans le labyrinthe de la forêt enchantée, Chaque parcelle du site a été pensée
+                          pour vous faire vivre une expérience unique et inoubliable. 🌿🐒🦜</p>
+                  </div>
+              </div>
 
-  <div class="row text-center text-light">
-    <div class="col-md-12 ">
-      <div>
-        <div class="gazelle-titre">
-          <img src="/images/savane/gazelle1.png" class="gazelle1" alt="gazelle"><h1 class="gazelle-text text-light text-center pb-2">Bienvenue au Zoo d'Arcadia</h1><img src="/images/savane/gazelle1.png" class="gazelle1" alt="gazelle">
-        </div>
-        <p class="accueil welcome-gazelle">
-          Lieu magique où vous pourrez découvrir des animaux extraordinaires et vivre une expérience inoubliable.
-          </br>Le directeur, José, c'est lancé dans cette aventure en 1960 décidant de créer un zoo pas comme les autres,un zoo le plus proche possible de la nature, 
-          avec un air avangardiste d'écologie un zoo où les animaux vivent en liberté dans un environnement proche de leur habitat naturel. 
-          Encadré par des vétérinaires expérimentés, les animaux sont chouchoutés et soignés avec amour. Il a choisit de s'installer dans la forêt de Brocéliande,
-          forêt mythique et enchantée citée dans plusieurs texte liés pour certain à la légende du roi Arthur. Vous découvrirez, au détour des chemins, 
-          La légende de Merlin l'enchanteur, et des chevaliers de la table ronde. Au fil de la visite, une expérience immersive vous attends. 
-          Vous pourrez vous promener avec le petit train, ou encore vous perdre dans le labyrinthe de la forêt enchantée, Chaque parcelle du site a été pensée 
-          pour vous faire vivre une expérience unique et inoubliable. 
-        </p>
-      </div>
-    </div>
+              <div class="col-lg-4 d-flex justify-content-center text-align-center">
+                  <img src="/images/savane/gazelle1.png" alt="marais" class="service-img img-fluid">
+              </div>
+          </div>
 
-    
-  </div>
 
-  <div class="row bg-arc-dark">
-    <div class="col rect-lower-effect"></div>
-  </div>
-  
-</section>
+      </section>
+
 
 <!--la page "Habitat" Commune a toutes les pages-->
 <section id="habitat" class="section habitat ">
@@ -443,19 +444,16 @@
         </div>
     <div class="col-md-4 py-3-girafe ">
       <div  class="bg-arc-mint-green-girafe  ">     
-          <h2 id="girafe" class=" text-body">
-          </br>
-            La Girafe (Giraffa camelopardalis) </br>
-            est une espèce de mammifères ongulés artiodactyles, du groupe des ruminants,</br>
-            vivant dans les savanes africaines et répandue du Tchad jusqu'en Afrique du Sud.</br>     
-            Son nom commun vient de l'arabe زرافة, zarāfah,</br>
-            mais l'animal fut anciennement appelé camélopard, du latin camelopardus1,</br> 
-            contraction de camelus (chameau) en raison du long cou et de pardus (léopard) </br>
-            en raison des taches recouvrant son corps.
-          </br>
-          </br>
-            
-          </h2>
+          <div id="girafe" class="bg-arc-mint-green-light text-body">
+              <h3>La Girafe (Giraffa camelopardalis)</h3>
+            <p>est une espèce de mammifères ongulés artiodactyles, du groupe des ruminants,<br>
+            vivant dans les savanes africaines et répandue du Tchad jusqu'en Afrique du Sud.<br>
+            Son nom commun vient de l'arabe زرافة, zarāfah,<br>
+            mais l'animal fut anciennement appelé camélopard, du latin camelopardus1,<br>
+            contraction de camelus (chameau) en raison du long cou et de pardus (léopard) <br>
+                en raison des taches recouvrant son corps.</p>
+
+          </div>
           <a href="/images/girafe.jpg" class="btn btn-arc-light text-light">Accéder à la page des girafes</a>
       </div>
     </div>

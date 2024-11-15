@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//include 'session_check.php';
+/*
 
 include 'db_connexion.php';
 
@@ -17,6 +17,8 @@ $result_animaux = $conn->query($sql_animaux);
 
 $sql_habitats = "SELECT * FROM habitats";
 $result_habitats = $conn->query($sql_habitats);
+
+*/
 ?>
 
 
@@ -182,7 +184,7 @@ $result_habitats = $conn->query($sql_habitats);
             <th>Commentaire privé</th>
         </tr>
 
-        <?php
+        <?php  /*
         if($result_animaux->num_rows > 0) {
             while($row = $result_animaux->fetch_assoc()) {
                 echo "<tr>
@@ -200,6 +202,8 @@ $result_habitats = $conn->query($sql_habitats);
         } else {
             echo "<tr><td colspan='5'>Aucun animal trouvé</td></tr>";
         }
+
+        */
         ?>
         
     </table>
@@ -210,7 +214,7 @@ $result_habitats = $conn->query($sql_habitats);
             <th>ID</th>
             <th>Type d'habitat</th>
         </tr>
-        <?php
+        <?php  /*
         if($result_habitats->num_rows > 0) {
             while($row = $result_habitats->fetch_assoc()) {
                 echo "<tr>
@@ -221,11 +225,14 @@ $result_habitats = $conn->query($sql_habitats);
         }else {
             echo "<tr><td colspan='5'>Aucun habitat trouvé</td></tr>";
         }
+
+        */
         ?>
         
     </table>
-    <?php
+    <?php  /*
     $conn->close();
+   */
     ?>
 
 </div>    

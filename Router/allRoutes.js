@@ -2,7 +2,7 @@ import Route from "./Route.js";
 
 //Définition des routes
 export const allRoutes = [
-    new Route("/", "Accueil", "/pages/home.html", []),
+    new Route("/", "Accueil", "/pages/home.php", []),
     new Route("/services", "Services", "/pages/services.html", []),
     new Route("/avis", "Avis", "/pages/avis.php", []),
     new Route("/jungle", "Jungle", "/pages/jungle/jungle.html", []),
@@ -37,7 +37,7 @@ export const allRoutes = [
     new Route("/zebres", "Zebres", "/pages/savane/zebres.html", []),
     new Route("/habitats", "Habitats", "/pages/habitats.html", []),
     new Route("/contact", "Contact", "/pages/contact.html", []),
-    new Route("/connexion", "Connexion", "/pages/connexion.html", ["disconnected"], "/js/auth/signin.js"),             
+    new Route("/connexion", "Connexion", "/pages/connexion.html", ["disconnected"], "/js/auth/signin.js" ),             
     new Route("/gestionH", "habitats", "/pages/gestion_habitat.php", ["admin"]),
     new Route("/editA", "animaux", "/pages/edit_animal.php", ["admin", "employe", "veterinaire"]),
     new Route("/admin", "admin", "/pages/admin.php", ["admin"]), 

@@ -1,6 +1,6 @@
 <?php
 //session_start();
-include 'db_connexion.php';
+/*include 'db_connexion.php';
 
 if($conn->connect_error) {
   die("erreur de connexion: " .$conn->connect_error);
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Réservé au staff du zoo, demandez vos identifiants à l'administration";
         }
     }
-}
+}*/
 
 ?>
 
@@ -54,30 +54,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div id="body">
 
 <div class="container my-md-4 py-3">
-  <section id="contact_top" class="section ">
-          
-      <div class="row">
-          <div class="col rect-upper-effect"></div>
-      </div>
-      
-          
-    
-      <div class="row bg-arc-dark">
-          <div class="col rect-lower-effect"></div>
-      </div>
-
-
-  </section>
-
 
   <section id="yourMessage" class="section-connexion">
       <div class="row bg-arc-mint-green py-3">
           <h2 class="text-light"><i class="bi bi-pencil-square text-light"></i> Connexion réservée Staff</h2>
 
-          <form method="POST" enctype="multipart/form-data" action="./controllers/sendEmail.php">
+          <form method="POST" action="./verification.php">
               <div class="mb-3">
                 <label for="username" class="form-label text-light">Nom d'utilisateur</label>
-                <input class="form-control" type="text" id="username" name="username" placeholder="username" required>
+                <input class="form-control" type="text" id="username" name="username" placeholder="Entrer le nom d'utilisateur" required>
                 <div class="invalid-feedback">
                   Le nom d'utilisateur et/ou le mot de passe ne corresponde pas aux données transmises par votre direction
                 </div>
@@ -85,14 +70,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label text-light">Mot de passe</label>
-                <input class="form-control" type="password" id="password" name="password" autocomplete="current-password" placeholder="**********" required>
-                <!--<button type="button" class="btn btn-light" id="togglePassword">Afficher</button>-->
+                <input class="form-control" type="password" id="password" name="password" autocomplete="current-password" placeholder="Entrer le mot de passe" required>
+                
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
                 <label class="form-check-label souvenir text-light" for="Check1">Se souvenir de moi</label>
               </div>
-              <button type="submit" class="btn btn-light" id="btnSignin">Connexion</button>
+              <button type="submit" class="btn btn-light" id="submit" value='LOGIN'>Connexion</button>
+<?php
+/*if(isset($_GET['erreur'])) {
+  $err = $GET['erreur'];
+  if($err==1 || $err==2)
+  echo "<p style='color:red>Utilisateur ou mot de passe incorrect</p>";
+}*/
+?>
+
+
           </form>
       </div>
   </section>

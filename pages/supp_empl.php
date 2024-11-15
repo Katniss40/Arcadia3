@@ -1,7 +1,9 @@
 <?php
 //session_start();
+
+/*
 include 'db_connexion.php';
-//include 'session_check.php';
+
 
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
@@ -26,4 +28,5 @@ if (isset($_get['id'])) {
 }
 
 $db->close();
+*/
 ?>

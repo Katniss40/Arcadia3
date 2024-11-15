@@ -1,6 +1,6 @@
 <?php
-session_start();
-//include 'session_check.php';
+/*
+include 'db_connexion.php';
 
 $servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
 $username = '383336';
@@ -12,7 +12,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
 }
-echo "Connexion réussi!";
+echo "Connexion réussi!";*/
 ?>
 
 
@@ -64,54 +64,59 @@ echo "Connexion réussi!";
             <div class="column column-1">
                 <h2>Bienvenue sur votre tableau de bord</h2>
                     <p>Vous pouvez maintenant accéder à toutes les fonctionnalités réservées à nos utilisateurs inscrits.</p>
+                    
+                    <div class="admin-card">
+                        <div id="employees" class="card">
+                            <div class="card-header bg-arc-mint-green text-light">
+                             Gestion des employés
+                            </div>
 
-                    <div id="employees" class="card">
-                        <div class="card-header bg-arc-mint-green text-light">
-                            Gestion des employés
-                        </div>
-                        <div class="card-body">
-                            <p>Ajouter, modifier ou supprimer des employés et gérer leurs autorisations.</p>
-                            <a href="/gestionE" class="btn btn-primary">Gérer les employés</a>
-                        </div>
-                    </div> 
-                    <br><br>
+                            <div class="card-body">
+                                <p>Ajouter, modifier ou supprimer des employés et gérer leurs autorisations.</p>
+                                <a href="/gestionE" class="btn btn-primary">Gérer les employés</a>
+                            </div>
+
+                        </div> 
+                        <br><br>
             
-                    <div id="services" class="card">
-                        <div class="card-header bg-arc-mint-green text-light">
-                            Gestion des services
+                        <div id="services" class="card">
+                            <div class="card-header bg-arc-mint-green text-light">
+                                Gestion des services
+                            </div>
+
+                            <div class="card-body">
+                                <p>Ajouter, modifier ou supprimer des services.</p>
+                                <a href="/gestionS" class="btn btn-primary">Gérer les services</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p>Ajouter, modifier ou supprimer des services.</p>
-                            <a href="/gestionS" class="btn btn-primary">Gérer les services</a>
+                        <br><br>                     
+                                
+                        <div id="habitats" class="card">
+                            <div class="card-header bg-arc-mint-green text-light">
+                                Gestion des habitats
+                            </div>
+
+                            <div class="card-body">
+                                <p>Ajouter, modifier ou supprimer des habitats.</p>
+                                <a href="/gestionH" class="btn btn-primary">Gérer les habitats</a>
+                            </div>
                         </div>
-                    </div>
-                    <br><br>
-                        
+                        <br><br>
                     
-            
-                    <div id="habitats" class="card">
-                        <div class="card-header bg-arc-mint-green text-light">
-                            Gestion des habitats
-                        </div>
-                        <div class="card-body">
-                            <p>Ajouter, modifier ou supprimer des habitats.</p>
-                            <a href="/gestionH" class="btn btn-primary">Gérer les habitats</a>
-                        </div>
-                    </div>
-                    <br><br>
-                    
-                    <div id="animaux" class="card">
-                        <div class="card-header bg-arc-mint-green text-light">
-                            Gestion des animaux
-                        </div>
-                        <div class="card-body">
-                            <p>Ajouter, modifier ou supprimer des animaux.</p>
-                            <a href="/gestionA" class="btn btn-primary">Gérer les animaux</a>
-                        </div>
-                    </div>
+                        <div id="animaux" class="card">
+                            <div class="card-header bg-arc-mint-green text-light">
+                                Gestion des animaux
+                            </div>
+
+                            <div class="card-body">
+                                <p>Ajouter, modifier ou supprimer des animaux.</p>
+                                <a href="/gestionA" class="btn btn-primary">Gérer les animaux</a>
+                            </div>
+                        </div>                        
+                    </div>         
             </div>
-        </div>
-
+    </div>
+</div>
         <div class="column column-2">
 
 
@@ -141,7 +146,7 @@ echo "Connexion réussi!";
                             <button type="submit" class="btn btn-outline-light me-2">Envoyer</button>
                         </form>
                     </div>
-
+        </div>
             </div>
         </div>
     </section>
