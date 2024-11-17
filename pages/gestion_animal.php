@@ -1,60 +1,4 @@
-<?php
-//session_start();
-/*
-include 'db_connexion.php';
 
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if($conn->connect_error) {
-    die("erreur de connexion: " .$conn->connect_error);
-}
-echo "Connexion réussi!";
-
-
-$result = $conn->query("SHOW COLUMNS FROM animaux LIKE 'unite_nourriture'");
-if ($result->num_rows == 0) {
-    $conn->query("ALTER TABLE animaux ADD COLUMN unite_nourriture VARCHAR(255) NOT NULL");
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nom = $_POST['nom'] ?? '';
-    $habitat = $_POST['habitat'] ?? '';
-    $espece = $_POST['espece'] ?? '';
-    $age = $_POST['age'] ?? '';
-    $poids = $_POST['poids'] ?? '';
-    $nourriture = $_POST['nourriture'] ?? '';
-    $unite_nourriture = $_POST['unite_nourriture'] ?? '';
-    $dernier_repas = $_POST['dernier_repas'] ?? '';
-    $quantite_requise = $_POST['quantite_requise'] ?? '';
-    $commentaires = $_POST['commentaires'] ?? '';
-    $remarques = $_POST['remarques'] ?? '';
-
-    if (!empty($nom) && !empty($habitat) && !empty($espece) && !empty($age) && !empty($poids) && !empty($nourriture) && !empty($unite_nourriture) && !empty($dernier_repas) && !empty($quantite_requise)) {
-        $sql = "INSERT INTO animaux (nom, habitat, espece, age, poids, nourriture, unite_nourriture, dernier_repas, quantite_requise, commentaires, remarques) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        if ($stmt === false) {
-            die("Erreur de préparation de la requête : " . $conn->error);
-        }
-        $stmt->bind_param("sssssssssss", $nom, $habitat, $espece, $age, $poids, $nourriture, $unite_nourriture, $dernier_repas, $quantite_requise, $commentaires, $remarques);
-
-        if ($stmt->execute()) {
-            echo "Nouvel enregistrement créé avec succès";
-        } else {
-            echo "Erreur : " . $stmt->error;
-        }
-
-        $stmt->close();
-    } else {
-        echo "Tous les champs sont requis.";
-    }
-}
-
-$sql = "SELECT * FROM animaux";
-$result = $conn->query($sql);
-
-*/
-?>
 
 
 <div class="hero-scene text-center">
@@ -188,43 +132,7 @@ $result = $conn->query($sql);
             </thead>
             <tbody>
 </section>                
-                <?php
-/*
-
-                $conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net", "383336", "@Admin2025", "zoo-arcadia-2025_zoo");
-
-                if ($conn->connect_error) {
-                    die("Échec de la connexion : " . $conn->connect_error);
-                }
-
-                $sql = "SELECT * FROM animaux";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
-                        echo "<tr>";
-                        echo "<td>" . htmlspecialchars($row['nom']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['habitat']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['espece']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['age']) . " ans</td>";
-                        echo "<td>" . htmlspecialchars($row['poids']) . " kg</td>";
-                        echo "<td>" . htmlspecialchars($row['nourriture']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['unite_nourriture']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['dernier_repas']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['quantite_requise']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['commentaires']) . "</td>";
-                        echo "<td>" . htmlspecialchars($row['remarques']) . "</td>";
-                        echo "<td><a href='edit_animal.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm'>Modifier</a> ";
-                        echo "<a href='supp_animal.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm'>Supprimer</a></td>";
-                        echo "</tr>";
-                    }
-                } else {
-                    echo "<tr><td colspan='12'>Aucun animal trouvé.</td></tr>";
-                }
-                $conn->close();
-
-                */
-                ?>
+                
             </tbody>
         </table>
 

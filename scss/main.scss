@@ -46,9 +46,12 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   z-index: 1030;
 }
 
-
 .connexion:hover::after {
   opacity: 1;
+}
+
+.nav-item {
+  list-style-type: none;
 }
 
 // Le footer
@@ -601,6 +604,6 @@ margin-top: -16px;
 }
 
 .card-habitat {
-  margin-right: 20rem;
-  margin-left: 20rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }

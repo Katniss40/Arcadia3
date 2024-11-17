@@ -12011,6 +12011,10 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   opacity: 1;
 }
 
+.nav-item {
+  list-style-type: none;
+}
+
 .footer-clean {
   padding: 14px 20px 0 20px;
   background-color: #0b4107;
@@ -12522,6 +12526,6 @@ img, svg {
 }
 
 .card-habitat {
-  margin-right: 20rem;
-  margin-left: 20rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

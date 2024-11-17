@@ -184,27 +184,7 @@ $result_habitats = $conn->query($sql_habitats);
             <th>Commentaire privé</th>
         </tr>
 
-        <?php  /*
-        if($result_animaux->num_rows > 0) {
-            while($row = $result_animaux->fetch_assoc()) {
-                echo "<tr>
-                <td>{$row['id']}</td>
-                <td>{$row['nom']}</td>
-                <td>{$row['habitat']}</td>
-                <td>{$row['espece']}</td>
-                <td>{$row['age']}</td>
-                <td>{$row['poids']}</td>
-                <td>{$row['nourriture']}</td>
-                <td>{$row['commentaires']}</td>
-                <td>{$row['remarques']}</td>
-                </tr>";
-            }
-        } else {
-            echo "<tr><td colspan='5'>Aucun animal trouvé</td></tr>";
-        }
-
-        */
-        ?>
+      
         
     </table>
 
@@ -214,25 +194,9 @@ $result_habitats = $conn->query($sql_habitats);
             <th>ID</th>
             <th>Type d'habitat</th>
         </tr>
-        <?php  /*
-        if($result_habitats->num_rows > 0) {
-            while($row = $result_habitats->fetch_assoc()) {
-                echo "<tr>
-                <td>{$row['id']}</td>
-                <td>{$row['nom']}</td>
-                </tr>";
-            }
-        }else {
-            echo "<tr><td colspan='5'>Aucun habitat trouvé</td></tr>";
-        }
-
-        */
-        ?>
+      
         
     </table>
-    <?php  /*
-    $conn->close();
-   */
-    ?>
+  
 
 </div>    
