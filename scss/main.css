@@ -31,7 +31,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #0B4107;
-  --bs-secondary: #16750E;
+  --bs-secondary: #D1F8CE;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -39,7 +39,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #997E1D;
   --bs-primary-rgb: 11, 65, 7;
-  --bs-secondary-rgb: 22, 117, 14;
+  --bs-secondary-rgb: 209, 248, 206;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -47,7 +47,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 153, 126, 29;
   --bs-primary-text-emphasis: #041a03;
-  --bs-secondary-text-emphasis: #092f06;
+  --bs-secondary-text-emphasis: #546352;
   --bs-success-text-emphasis: #0a3622;
   --bs-info-text-emphasis: #055160;
   --bs-warning-text-emphasis: #664d03;
@@ -55,7 +55,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #ced9cd;
-  --bs-secondary-bg-subtle: #d0e3cf;
+  --bs-secondary-bg-subtle: #f6fef5;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #cff4fc;
   --bs-warning-bg-subtle: #fff3cd;
@@ -63,7 +63,7 @@
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #9db39c;
-  --bs-secondary-border-subtle: #a2c89f;
+  --bs-secondary-border-subtle: #edfceb;
   --bs-success-border-subtle: #a3cfbb;
   --bs-info-border-subtle: #9eeaf9;
   --bs-warning-border-subtle: #ffe69c;
@@ -143,7 +143,7 @@
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #6d8d6a;
-  --bs-secondary-text-emphasis: #73ac6e;
+  --bs-secondary-text-emphasis: #e3fbe2;
   --bs-success-text-emphasis: #75b798;
   --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #ffda6a;
@@ -151,7 +151,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: #020d01;
-  --bs-secondary-bg-subtle: #041703;
+  --bs-secondary-bg-subtle: #2a3229;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -159,7 +159,7 @@
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #36652d;
   --bs-primary-border-subtle: #072704;
-  --bs-secondary-border-subtle: #0d4608;
+  --bs-secondary-border-subtle: #7d957c;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #087990;
   --bs-warning-border-subtle: #997404;
@@ -1947,13 +1947,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #389019;
-  --bs-table-bg: #d0e3cf;
-  --bs-table-border-color: #b2d2ab;
-  --bs-table-striped-bg: #c8dfc6;
+  --bs-table-bg: #f6fef5;
+  --bs-table-border-color: #d0e8c9;
+  --bs-table-striped-bg: #edf9ea;
   --bs-table-striped-color: #389019;
-  --bs-table-active-bg: #c1dbbd;
+  --bs-table-active-bg: #e3f3df;
   --bs-table-active-color: #389019;
-  --bs-table-hover-bg: #c5ddc1;
+  --bs-table-hover-bg: #e8f6e5;
   --bs-table-hover-color: #389019;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3028,20 +3028,20 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #16750E;
-  --bs-btn-border-color: #16750E;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #13630c;
-  --bs-btn-hover-border-color: #125e0b;
-  --bs-btn-focus-shadow-rgb: 57, 138, 50;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #125e0b;
-  --bs-btn-active-border-color: #11580b;
+  --bs-btn-color: #389019;
+  --bs-btn-bg: #D1F8CE;
+  --bs-btn-border-color: #D1F8CE;
+  --bs-btn-hover-color: #389019;
+  --bs-btn-hover-bg: #d8f9d5;
+  --bs-btn-hover-border-color: #d6f9d3;
+  --bs-btn-focus-shadow-rgb: 186, 232, 179;
+  --bs-btn-active-color: #389019;
+  --bs-btn-active-bg: #daf9d8;
+  --bs-btn-active-border-color: #d6f9d3;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(56, 144, 25, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #16750E;
-  --bs-btn-disabled-border-color: #16750E;
+  --bs-btn-disabled-color: #389019;
+  --bs-btn-disabled-bg: #D1F8CE;
+  --bs-btn-disabled-border-color: #D1F8CE;
 }
 
 .btn-success {
@@ -3164,19 +3164,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #16750E;
-  --bs-btn-border-color: #16750E;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #16750E;
-  --bs-btn-hover-border-color: #16750E;
-  --bs-btn-focus-shadow-rgb: 22, 117, 14;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #16750E;
-  --bs-btn-active-border-color: #16750E;
+  --bs-btn-color: #D1F8CE;
+  --bs-btn-border-color: #D1F8CE;
+  --bs-btn-hover-color: #389019;
+  --bs-btn-hover-bg: #D1F8CE;
+  --bs-btn-hover-border-color: #D1F8CE;
+  --bs-btn-focus-shadow-rgb: 209, 248, 206;
+  --bs-btn-active-color: #389019;
+  --bs-btn-active-bg: #D1F8CE;
+  --bs-btn-active-border-color: #D1F8CE;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(56, 144, 25, 0.125);
-  --bs-btn-disabled-color: #16750E;
+  --bs-btn-disabled-color: #D1F8CE;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #16750E;
+  --bs-btn-disabled-border-color: #D1F8CE;
   --bs-gradient: none;
 }
 
@@ -6802,7 +6802,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #389019 !important;
   background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -6850,8 +6850,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(18, 94, 11, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(18, 94, 11, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(218, 249, 216, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(218, 249, 216, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -12293,7 +12293,7 @@ button {
 
 .card-habitat .card-title {
   font-size: 1.4em;
-  background-color: rgba(0, 38, 28, 0.8);
+  background-color: #0b4107;
   border-radius: 20px;
   padding: 5px 15px;
   text-align: center;
@@ -12374,7 +12374,7 @@ img, svg {
 .service-img {
   max-height: 200px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px #044d29;
+  box-shadow: 2px 2px #0b4107;
   border-radius: 50%;
   transition: transform 0.5s ease;
   margin-top: 20px;
@@ -12391,7 +12391,7 @@ img, svg {
 .titres {
   background-color: white;
   opacity: 1;
-  background-color: rgba(0, 38, 28, 0.8);
+  background-color: #0b4107;
   color: white;
   opacity: 0.9;
   border-radius: 20px;
@@ -12413,7 +12413,7 @@ img, svg {
 
 .img-habitat {
   max-height: 240px;
-  box-shadow: 2px 2px #044d29;
+  box-shadow: 2px 2px #0b4107;
   border-radius: 5%;
 }
 
@@ -12528,4 +12528,10 @@ img, svg {
 .card-habitat {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
+}
+
+#gazelleService {
+  max-height: 300px;
+  margin-left: 120px;
+  margin-top: 70px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
-const mailInput = document.getElementById("EmailInput");
-const passwordInput = document.getElementById("PasswordInput");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
 const btnsignin = document.getElementById("btnSignin");
 
 btnsignin.addEventListener("click", checkCredentials);
@@ -7,7 +7,7 @@ btnsignin.addEventListener("click", checkCredentials);
 function checkCredentials() {
     // ici il faudra appeler l'api
 
-    if(mailInput.value == "administrateur@arcadia.fr" && passwordInput.value == "admin") {
+    if(username.value == "administrateur@arcadia.fr" && password.value == "admin") {
         
         
         //Il faudra recup le vrai token
@@ -16,10 +16,10 @@ function checkCredentials() {
         // place ce token en cookie
 
         setCookie(RoleCookieName, "admin", 7);
-        window.location.replace("/");
+        window.location.replace("/pages/admin.php");
     }
 
-    if(mailInput.value == "veterinaire@arcadia.fr" && passwordInput.value == "veto") {
+    if(username.value == "veterinaire@arcadia.fr" && password.value == "veto") {
         
         
         //Il faudra recup le vrai token
@@ -28,10 +28,10 @@ function checkCredentials() {
         // place ce token en cookie
 
         setCookie(RoleCookieName, "veterinaire", 7);
-        window.location.replace("/");
+        window.location.replace("/pages/sante.php");
     }
 
-    if(mailInput.value == "employe@arcadia.fr" && passwordInput.value == "empl") {
+    if(username.value == "employe@arcadia.fr" && password.value == "empl") {
         
         
         //Il faudra recup le vrai token
@@ -40,12 +40,12 @@ function checkCredentials() {
         // place ce token en cookie
 
         setCookie(RoleCookieName, "employe", 7);
-        window.location.replace("/");
+        window.location.replace("/pages/employe.php");
     }
 
     else {
-        mailInput.classList.add("is-invalid");
-        passwordInput.classList.add("is-invalid");
+        username.classList.add("is-invalid");
+        mdp.classList.add("is-invalid");
     }
 
 
@@ -58,10 +58,10 @@ if(username.value == "administrateur" && password.value == "admin2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "admin", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/admin.php");
 }
 
-if(username.value == "veterinaire1" && password.value == "veto1-2025") {
+if(username.value == "veterinaire1" && password.value == "V1-2025") {
     
     
     //Il faudra recup le vrai token
@@ -70,10 +70,10 @@ if(username.value == "veterinaire1" && password.value == "veto1-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "veterinaire1", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/sante.php");
 }
 
-if(username.value == "veterinair21" && password.value == "veto2-2025") {
+if(username.value == "veterinair2" && password.value == "V2-2025") {
     
     
     //Il faudra recup le vrai token
@@ -82,10 +82,10 @@ if(username.value == "veterinair21" && password.value == "veto2-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "veterinaire2", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/sante.php");
 }
 
-if(username.value == "veterinaire3" && password.value == "veto3-2025") {
+if(username.value == "veterinaire3" && password.value == "V3-2025") {
     
     
     //Il faudra recup le vrai token
@@ -94,10 +94,10 @@ if(username.value == "veterinaire3" && password.value == "veto3-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "veterinaire3", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/sante.php");
 }
 
-if(username.value == "employe1" && password.value == "empl1-2025") {
+if(username.value == "employe1" && password.value == "E1-2025") {
     
     
     //Il faudra recup le vrai token
@@ -106,10 +106,10 @@ if(username.value == "employe1" && password.value == "empl1-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "employe1", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/employe.php");
 }
 
-if(username.value == "employe2" && password.value == "empl2-2025") {
+if(username.value == "employe2" && password.value == "E2-2025") {
     
     
     //Il faudra recup le vrai token
@@ -118,10 +118,10 @@ if(username.value == "employe2" && password.value == "empl2-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "employe2", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/employe.php");
 }
 
-if(username.value == "employe3" && password.value == "empl3-2025") {
+if(username.value == "employe3" && password.value == "E3-2025") {
     
     
     //Il faudra recup le vrai token
@@ -130,7 +130,7 @@ if(username.value == "employe3" && password.value == "empl3-2025") {
     // place ce token en cookie
 
     setCookie(RoleCookieName, "employe3", 7);
-    window.location.replace("/");
+    window.location.replace("/pages/employe.php");
 }
 
 else {

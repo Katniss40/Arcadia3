@@ -1,4 +1,40 @@
-const tokenCookieName = "accesstoken";
+let isLoggedIn = false;
+
+const loginBtn = document.getElementById('loginBtn');
+const logoutBtn = document.getElementById('logoutBtn');
+
+function updateButtonVisibility() {
+    if(isLoggedIn) {
+        loginBtn.style.display = 'none';
+        logoutBtn.style.display = 'block';
+    } else {
+        loginBtn.style.display = 'block';
+        logoutBtn.style.display = 'none';
+    }
+}
+
+loginBtn.addEventListener('click', () => {
+    isLoggedIn = true,
+    updateButtonVisibility();
+});
+
+logoutBtn.addEventListener('click', () => {
+    isLoggedIn = false;
+    updateButtonVisibility();
+});
+
+
+// initialisation de l'affichage de sboutons
+
+updateButtonVisibility();
+
+
+
+
+
+
+
+/*const tokenCookieName = "accesstoken";
 const RoleCookieName = "role"
 const signoutBtn = document.getElementById("signout-btn");
 
@@ -73,7 +109,7 @@ function setCookie(name,value,days) {
         - employe
     */
 
-        function showAndHideElementsForRoles() {
+       /* function showAndHideElementsForRoles() {
             const userConnected = isConnected();
             const role = getRole();
 
@@ -110,4 +146,4 @@ function setCookie(name,value,days) {
 
                 };
             });
-        }
+        }*/

@@ -1,9 +1,8 @@
 <?php
-//session_start();
-/*
+session_start();
+
 include 'db_connexion.php';
 
-$conn = new mysqli("mysql-zoo-arcadia-2025.alwaysdata.net", "383336", "@Admin2025", "zoo-arcadia-2025_zoo");
 
 if($conn->connect_error) {
     die("erreur de connexion: " .$conn->connect_error);
@@ -19,7 +18,7 @@ if(isset($_get['id'])) {
     $stmt->close();
 }
 
-header("location: gestion_animal.php");
+header("location: /gestionA");
 exit();
-$conn->close();*/
+$conn->close();
 ?>

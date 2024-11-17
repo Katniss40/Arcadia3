@@ -1,14 +1,14 @@
 <?php
 
-/*
+
 session_start();
 if(isset($_POST['username']) && isset($_POST['password'])) {
 
     //connexion a la base de données
-    $servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
-    $username = '383336';
-    $password =  '@Admin2025';
-    $dbname = 'zoo-arcadia-2025_zoo';
+    $servername = 'localhost';
+    $username = 'admin';
+    $password =  'admin';
+    $dbname = 'arcadia_2025';
     $db = mysqli_connect($servername, $username, $password, $dbname)
     or die('Pas de connexion a la database');
 
@@ -39,5 +39,5 @@ else {
 }
 
 mysqli_close($db); // ferme la connexion
-*/
+
 ?>

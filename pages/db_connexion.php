@@ -1,16 +1,27 @@
 <?php
-//include 'session_check.php';
-session_start();
-$servername = 'mysql-zoo-arcadia-2025.alwaysdata.net';
-$username = '383336';
-$password =  '@Admin2025';
-$dbname = 'zoo-arcadia-2025_zoo';
+// test de connexion
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+//session_start();
 
-if($conn->connect_error) {
-    die("erreur de connexion: " .$conn->connect_error);
-} 
-echo "Connexion réussi!";
+$host = 'mysql-zoo-arcadia-2025.alwaysdata.net';
+$db = 'zoo-arcadia-2025_zoo';
+$user = '383336';
+$pass =  '@Admin2025';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$option= [
+  PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+  PDO::ATTR_EMULATE_PREPARES   => false
+];
+
+try {
+  $pdo = new PDO($dsn, $user, $pass, $option);
+  echo "connexion réussi !  Bienvenue au zoo Arcadia.";
+}
+catch (\PDOException $e) {
+  throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+
 ?>
-

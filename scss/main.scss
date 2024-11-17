@@ -357,7 +357,7 @@ button {
 
 .card-habitat .card-title {
   font-size: 1.4em;
-  background-color: rgba(0, 38, 28, .8);
+  background-color: #0b4107;
   border-radius: 20px;
   padding: 5px 15px;
   text-align: center;
@@ -441,7 +441,7 @@ img, svg {
 .service-img {
   max-height: 200px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px #044d29;
+  box-shadow: 2px 2px #0b4107;
   border-radius: 50%;
   transition: transform .5s ease;
   margin-top: 20px;
@@ -459,7 +459,7 @@ img, svg {
 .titres {
   background-color: white;
   opacity: 1;
-  background-color: rgba(0, 38, 28, .8);
+  background-color: #0b4107;
   color: white;
   opacity: 0.9;
   border-radius: 20px;
@@ -482,7 +482,7 @@ img, svg {
 
 .img-habitat {
   max-height: 240px;
-  box-shadow: 2px 2px #044d29;
+  box-shadow: 2px 2px #0b4107;
   border-radius: 5%;
 }
 
@@ -606,4 +606,10 @@ margin-top: -16px;
 .card-habitat {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
+}
+
+#gazelleService {
+  max-height: 300px;
+  margin-left: 120px;
+  margin-top: 70px;
 }
