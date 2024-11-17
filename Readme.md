@@ -5,16 +5,16 @@
 =============
 
 Ce site est un site vitrine pour le Zoo Arcadia
-Crée dans le cadre de ma formation dans l'ecole Studi pour mon ECF 
+Crée dans le cadre de ma formation dans l'école Studi pour mon ECF 
 ------------------------------------------------------------------
 
-![logo du zoo arcadia](images/logo3.png)
+![logo du zoo Arcadia](images/logo3.png)
 
 ### Présentation ###
 --------------------
 
 Ce site est un site vitrine pour le Zoo Arcadia
-Crée dans le cadre de ma formation dans l'ecole Studi pour mon ECF 
+Crée dans le cadre de ma formation dans l'école Studi pour mon ECF 
 ------------------------------------------------------------------
 
 ### Technologie utilisées ###
@@ -24,12 +24,12 @@ Crée dans le cadre de ma formation dans l'ecole Studi pour mon ECF
 * **SCSS** ================> style du site
 * **JAVASCRIPT** ==========> ajout des fonctions de connexion (en attente de passage sur php)
 * **BOOTSTRAP 4.5.2** =====> création des carrousels, et des navbars
-* **FONT AWESOME 5.15.1** => ajout d'icones
+* **FONT AWESOME 5.15.1** => ajout d'icônes
 * **googleapis** ==========> ajout d'icones et de police de caractères 
-* **VS CODE** =============> edicteur du code
-* **MY SQL** ==============> systeme de gestion de base de données
+* **VS CODE** =============> éditeur du code
+* **MY SQL** ==============> système de gestion de base de données
 * **PHPMYADMIN** ==========> outil de gestion de base de données
-* **XAMPP** ===============> environement
+* **XAMPP** ===============> environnement
 
 
 ### Fonctions ###
@@ -37,19 +37,19 @@ Crée dans le cadre de ma formation dans l'ecole Studi pour mon ECF
 
 ### FrontEnd ###
 ----------------
-* **Page d'accueil** : Acuueil/présentationd u zoo
+* **Page d'accueil** : Acueil/présentation du zoo
 * **Page services**  : présentation des services du zoo
 * **Page Habitats** : page de présentation des differents habitats
 * **Page Marais** : habitat des marais 
-* **Page Jungle** :habitat de la jungle
+* **Page Jungle** : habitat de la jungle
 * **Page Savane** : habitat de la savane
-* **Page les differents annimaux** : présentations des annimaux du zoo
+* **Page les differents annimaux** : présentation des annimaux du zoo
 * **Page Contact** : contact par mail du zoo
 * **Page Avis** : visiteurs laissant leurs avis
 * **Page Connexion/deconnexion** 
-* **Page Administrateur** : réservé a l'administrateur
-* **Page Vétérianire** : reservé aux vétérinaires
-* **Page Employe** : réservé aux employés
+* **Page Administrateur** : réservée a l'administrateur
+* **Page Vétérianire** : reservée aux vétérinaires
+* **Page Employe** : réservée aux employés
 
 ### BackEnd ###
 ---------------
